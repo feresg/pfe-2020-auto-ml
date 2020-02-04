@@ -1,4 +1,4 @@
-## Design and Development of a Graphical Based Machine Learning Pipelines Designer Web Application
+# Design and Development of a Graphical Based Machine Learning Pipelines Designer Web Application
 
 
 ### Abstract
