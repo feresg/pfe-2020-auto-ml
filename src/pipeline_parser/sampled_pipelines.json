@@ -14,14 +14,14 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "NEylmyFa4SkGEqy82gOHvQ=="
+        "id": "polynomial_random_forest_0"
     },
     {
         "pca_keep_variance": 0.7419362314235528,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "IQzmoJbEvpoAvXKTxCFZ2g=="
+        "id": "pca_gaussian_nb_0"
     },
     {
         "polynomial_include_bias": 1,
@@ -39,7 +39,7 @@
         "gradient_boosting_max_depth": 10,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "vIWL93B6Ptjblu1RmBo3rA=="
+        "id": "polynomial_gradient_boosting_0"
     },
     {
         "polynomial_include_bias": 1,
@@ -60,7 +60,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "ws8-B3dMghNH_2Pf13Hzmg=="
+        "id": "polynomial_xgradient_boosting_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -81,7 +81,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "KXyNQorptCJXeaSpPxlMQQ=="
+        "id": "polynomial_xgradient_boosting_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -91,7 +91,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "f9CLDC7OFKTkO8lOCTYhVg=="
+        "id": "polynomial_multinomial_nb_0"
     },
     {
         "pca_keep_variance": 0.8146929338758189,
@@ -106,7 +106,7 @@
         "decision_tree_max_depth": 0.5682096220053205,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "L93XISXVc2fcuITkv2_nNw=="
+        "id": "pca_decision_tree_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -123,7 +123,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "f9_FIr5sKh4VKQVbT_257g=="
+        "id": "polynomial_random_forest_1"
     },
     {
         "polynomial_include_bias": 1,
@@ -141,7 +141,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "4ndJUGc_VdyDoQxzzmRr3g=="
+        "id": "polynomial_gradient_boosting_1"
     },
     {
         "pca_keep_variance": 0.5344120885950816,
@@ -158,7 +158,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "AEgQhDuZIeY7wKwM59vqmg=="
+        "id": "pca_gradient_boosting_0"
     },
     {
         "pca_keep_variance": 0.929496700783203,
@@ -169,7 +169,7 @@
         "lda_tol": 0.0012997983554081983,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "lNpHFQoLr4un-HHHJOmFBA=="
+        "id": "pca_lda_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -179,7 +179,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "S3Hqz_kxfcA1EL0p3FX-SQ=="
+        "id": "polynomial_multinomial_nb_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -196,7 +196,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "olvn2d5t6p6n2Zkvzm4iAQ=="
+        "id": "polynomial_random_forest_2"
     },
     {
         "pca_keep_variance": 0.5819224044584288,
@@ -213,7 +213,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "YlaI1WagktTPtCLd4I9wbA=="
+        "id": "pca_gradient_boosting_1"
     },
     {
         "pca_keep_variance": 0.794261956434754,
@@ -229,7 +229,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "XIxeqd5FGGQ59qv1F5T75w=="
+        "id": "pca_random_forest_0"
     },
     {
         "pca_keep_variance": 0.7933804622801373,
@@ -240,38 +240,38 @@
         "lda_tol": 1.5757839108619443e-05,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "bKF_TUbd3lF912PqeW1jsg=="
+        "id": "pca_lda_1"
     },
     {
         "pca_keep_variance": 0.6856501452267505,
         "pca_whiten": 1,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "IkLVtqV9Cv1CUrlFT9lcng=="
+        "id": "pca_gaussian_nb_1"
     },
     {
         "pca_keep_variance": 0.9006067529353747,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 2,
+        "k_nearest_neighbors_n_neighbors": 15,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "v-oXNZya6BgLUVrRXk2d0A=="
+        "id": "pca_k_nearest_neighbors_0"
     },
     {
         "pca_keep_variance": 0.7795711135969796,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "VV0DhoYlRSRh3BpH-4oU-Q=="
+        "id": "pca_gaussian_nb_2"
     },
     {
         "pca_keep_variance": 0.6916442212818907,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "swRs-vedzFqpQVQunSHLKA=="
+        "id": "pca_gaussian_nb_3"
     },
     {
         "polynomial_include_bias": 0,
@@ -292,7 +292,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "qA7b66E7w6URDz4dBI1_-w=="
+        "id": "polynomial_xgradient_boosting_2"
     },
     {
         "pca_keep_variance": 0.8233488499397881,
@@ -305,17 +305,17 @@
         "libsvm_svc_gamma": 0.013065316692122108,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "pMErmohq__6Opiwno3oSbg=="
+        "id": "pca_libsvm_svc_0"
     },
     {
         "pca_keep_variance": 0.7369639511496904,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 5,
+        "k_nearest_neighbors_n_neighbors": 19,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "LBudFkBJcDsokh-GcqXWKA=="
+        "id": "pca_k_nearest_neighbors_1"
     },
     {
         "pca_keep_variance": 0.604223235138144,
@@ -330,7 +330,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "1wYVXKsh7zgh-nh03OxEeg=="
+        "id": "pca_extra_trees_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -347,7 +347,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "gUfC-85IHC4zOdO8RpaUWg=="
+        "id": "polynomial_random_forest_3"
     },
     {
         "polynomial_include_bias": 1,
@@ -357,7 +357,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "JVvtd5eJSWaMwgRXOcab8w=="
+        "id": "polynomial_bernoulli_nb_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -374,17 +374,17 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "013uiE3CnzBOyAnLM0N8ew=="
+        "id": "polynomial_random_forest_4"
     },
     {
         "pca_keep_variance": 0.6745623652437062,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 29,
+        "k_nearest_neighbors_n_neighbors": 25,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "M5MCxiHMMpRcGJl6O8F74A=="
+        "id": "pca_k_nearest_neighbors_2"
     },
     {
         "pca_keep_variance": 0.9123076927992244,
@@ -399,7 +399,7 @@
         "libsvm_svc_gamma": 0.015157288918342735,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "l9ivvL0lP124656kzmiOwA=="
+        "id": "pca_libsvm_svc_1"
     },
     {
         "polynomial_include_bias": 1,
@@ -408,23 +408,7 @@
         "qda_reg_param": 2.035374337246573,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "7cN_KATFGYDiPcovpdCKyQ=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 2.642581481291133,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 3,
-        "libsvm_svc_coef0": -0.769597633077993,
-        "libsvm_svc_tol": 0.00010403405970344133,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 2.211584307246706,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "f-6zEDnp5AR3qgoDF-2BXw=="
+        "id": "polynomial_qda_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -442,7 +426,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "S99cnggC9y1LWncAlUZIIQ=="
+        "id": "polynomial_gradient_boosting_2"
     },
     {
         "pca_keep_variance": 0.7332237854813886,
@@ -458,7 +442,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "BeRRmUxw5QRCRJwiIaVvhg=="
+        "id": "pca_random_forest_1"
     },
     {
         "pca_keep_variance": 0.9990976252814712,
@@ -474,7 +458,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "buetVfekGV08wiUKjbGipw=="
+        "id": "pca_random_forest_2"
     },
     {
         "polynomial_include_bias": 1,
@@ -489,7 +473,7 @@
         "libsvm_svc_gamma": 1.9177303066593245,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "657yPT6nr7lJKYVb85Zi0w=="
+        "id": "polynomial_libsvm_svc_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -510,7 +494,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "8mg_tpw2RbazXwC1ZsyU0Q=="
+        "id": "polynomial_xgradient_boosting_3"
     },
     {
         "polynomial_include_bias": 0,
@@ -526,7 +510,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "206ppht_5OMW5up5llZ-gA=="
+        "id": "polynomial_extra_trees_0"
     },
     {
         "pca_keep_variance": 0.6976497607376032,
@@ -546,7 +530,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "V4ZwijR_mVuN2_ueEaXxcg=="
+        "id": "pca_xgradient_boosting_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -567,7 +551,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "JWp9FlfOyWhPkEYYc5tVqg=="
+        "id": "polynomial_xgradient_boosting_4"
     },
     {
         "pca_keep_variance": 0.9213250449671708,
@@ -582,7 +566,7 @@
         "decision_tree_max_depth": 1.967894712459263,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "7vaGdXrJzPElKFEJoML0AQ=="
+        "id": "pca_decision_tree_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -598,7 +582,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "KKvQraP4rQel71_Jxnlp4Q=="
+        "id": "polynomial_extra_trees_1"
     },
     {
         "pca_keep_variance": 0.9661337691475893,
@@ -614,7 +598,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "4XgFnLNCYgOoYO8aEptEow=="
+        "id": "pca_random_forest_3"
     },
     {
         "polynomial_include_bias": 1,
@@ -631,7 +615,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "y2iUZkDrU6Zoh-WWwsOtpw=="
+        "id": "polynomial_random_forest_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -647,7 +631,7 @@
         "decision_tree_max_depth": 0.6487157681568967,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "t-wTkwmDKzXgtHPXDTAVuw=="
+        "id": "polynomial_decision_tree_0"
     },
     {
         "polynomial_include_bias": 1,
@@ -663,7 +647,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "yMQrUE0vOQlGiKv-hNgUlg=="
+        "id": "polynomial_extra_trees_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -684,7 +668,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "avTIRt_QgnYaq_b_ktkKnw=="
+        "id": "polynomial_xgradient_boosting_5"
     },
     {
         "pca_keep_variance": 0.5711649857901333,
@@ -697,7 +681,7 @@
         "libsvm_svc_gamma": 0.002613764673594377,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "bK7bYA-m2MEPTa13QY3OdA=="
+        "id": "pca_libsvm_svc_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -713,7 +697,7 @@
         "decision_tree_max_depth": 1.3175245768572952,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "1bcE00J8az9gf4GYJnPBZA=="
+        "id": "polynomial_decision_tree_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -730,7 +714,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "1m0EPnju9pI7nqSRrxAD7Q=="
+        "id": "polynomial_random_forest_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -751,7 +735,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "o37o1czCNM1XszAHlKsxqA=="
+        "id": "polynomial_xgradient_boosting_6"
     },
     {
         "pca_keep_variance": 0.7758875699535153,
@@ -766,7 +750,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "tXO1--oG-cb4FRnBHB8f3A=="
+        "id": "pca_extra_trees_1"
     },
     {
         "pca_keep_variance": 0.8423495517567041,
@@ -781,7 +765,7 @@
         "decision_tree_max_depth": 0.6839743213113434,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "dM0oLMbkgAIjfCsEGOfX7w=="
+        "id": "pca_decision_tree_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -795,7 +779,7 @@
         "libsvm_svc_gamma": 0.005500618589113318,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "qW1PQF7UERUmX8Arv2FCzw=="
+        "id": "polynomial_libsvm_svc_1"
     },
     {
         "pca_keep_variance": 0.9035882335340397,
@@ -803,7 +787,7 @@
         "qda_reg_param": 5.020678437343924,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "-fgOfD-ixjcHRP58kkQrzA=="
+        "id": "pca_qda_0"
     },
     {
         "polynomial_include_bias": 1,
@@ -819,7 +803,7 @@
         "decision_tree_max_depth": 0.6881494002821626,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "W-CdPywpP_0oJd7seuKf6A=="
+        "id": "polynomial_decision_tree_2"
     },
     {
         "pca_keep_variance": 0.5353654910122997,
@@ -834,7 +818,7 @@
         "decision_tree_max_depth": 0.14932137821765457,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "PyqBqEyrQXITGYnXPEMFNg=="
+        "id": "pca_decision_tree_3"
     },
     {
         "pca_keep_variance": 0.5372259179449732,
@@ -849,7 +833,7 @@
         "decision_tree_max_depth": 1.3043345305172704,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "MOMCJKVpijJnXAjIKhcHSA=="
+        "id": "pca_decision_tree_4"
     },
     {
         "pca_keep_variance": 0.6064472769020379,
@@ -864,7 +848,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "HnAJy-8vitFcySO3GV3pXA=="
+        "id": "pca_extra_trees_2"
     },
     {
         "pca_keep_variance": 0.5229789186051061,
@@ -878,7 +862,7 @@
         "libsvm_svc_gamma": 0.012374638632623756,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "yVCqShckbLnPh8v6qNcx5g=="
+        "id": "pca_libsvm_svc_3"
     },
     {
         "pca_keep_variance": 0.5486452002112856,
@@ -894,7 +878,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "XSaSm6uTXp5QcdZ1yAxDMA=="
+        "id": "pca_random_forest_4"
     },
     {
         "pca_keep_variance": 0.5969466550045222,
@@ -910,7 +894,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "edLI4cTrNaMN7mpNB1JtiA=="
+        "id": "pca_random_forest_5"
     },
     {
         "pca_keep_variance": 0.619592436646721,
@@ -927,7 +911,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "tkGy7t0OcOabIcL7yZshCg=="
+        "id": "pca_gradient_boosting_2"
     },
     {
         "polynomial_include_bias": 1,
@@ -943,7 +927,7 @@
         "decision_tree_max_depth": 1.5435015599830735,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "og37uvHN_gOsUX-5p7N7og=="
+        "id": "polynomial_decision_tree_3"
     },
     {
         "polynomial_include_bias": 0,
@@ -961,7 +945,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "0eCpUVYKq9z_razwzR26Xw=="
+        "id": "polynomial_gradient_boosting_3"
     },
     {
         "polynomial_include_bias": 1,
@@ -982,7 +966,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "5LAx4eNchi6nvElcX7kROg=="
+        "id": "polynomial_xgradient_boosting_7"
     },
     {
         "polynomial_include_bias": 1,
@@ -998,7 +982,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "kHKSB0xmgfFTbLWK16QRow=="
+        "id": "polynomial_extra_trees_3"
     },
     {
         "polynomial_include_bias": 1,
@@ -1014,7 +998,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "t67u8lJtEHjtT2Q_nkbc3Q=="
+        "id": "polynomial_extra_trees_4"
     },
     {
         "pca_keep_variance": 0.6513094654124145,
@@ -1034,7 +1018,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "8RorvjkObnp9PJU3JNhuvQ=="
+        "id": "pca_xgradient_boosting_1"
     },
     {
         "polynomial_include_bias": 1,
@@ -1050,7 +1034,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "vvaxPhB33uV7ibnOZX48IA=="
+        "id": "polynomial_extra_trees_5"
     },
     {
         "pca_keep_variance": 0.8866545734832909,
@@ -1067,14 +1051,14 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "pPdTNtHF2ixR9lfQb3YJcA=="
+        "id": "pca_gradient_boosting_3"
     },
     {
         "pca_keep_variance": 0.6096756730737933,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "ZP9XMASNVYqKC6NBqCgmFw=="
+        "id": "pca_gaussian_nb_4"
     },
     {
         "pca_keep_variance": 0.6847533372528772,
@@ -1089,7 +1073,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "opbtfAFHVRC0FeHQbEYB_A=="
+        "id": "pca_extra_trees_3"
     },
     {
         "pca_keep_variance": 0.8307245206411698,
@@ -1109,7 +1093,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "2Fy0D2bMrQIKNumRx3v5Vw=="
+        "id": "pca_xgradient_boosting_2"
     },
     {
         "pca_keep_variance": 0.505606388594637,
@@ -1124,7 +1108,7 @@
         "decision_tree_max_depth": 0.6690633790720453,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "uEkOY-QFfORzuPtxod4JYA=="
+        "id": "pca_decision_tree_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -1141,7 +1125,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "s8t6bEBjaRE9TVYZGSUNsA=="
+        "id": "polynomial_random_forest_7"
     },
     {
         "polynomial_include_bias": 1,
@@ -1162,7 +1146,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "UpyuQxzFQLXJNSD4K-rI6A=="
+        "id": "polynomial_xgradient_boosting_8"
     },
     {
         "pca_keep_variance": 0.5569342792153346,
@@ -1170,7 +1154,7 @@
         "qda_reg_param": 7.268366210114291,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "bcDf2m8IZ8ZjzL7u-4aCLg=="
+        "id": "pca_qda_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -1191,7 +1175,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "KsWYUV4yw3AQd6X375I-CA=="
+        "id": "polynomial_xgradient_boosting_9"
     },
     {
         "pca_keep_variance": 0.8602332599846287,
@@ -1207,7 +1191,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "sWX6Ry93NkJzWF1NvcqCNA=="
+        "id": "pca_random_forest_6"
     },
     {
         "pca_keep_variance": 0.950785746940561,
@@ -1221,7 +1205,7 @@
         "libsvm_svc_gamma": 0.00010308427161954582,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "tparthA5Ge67Ebq9d8Xz7A=="
+        "id": "pca_libsvm_svc_4"
     },
     {
         "pca_keep_variance": 0.6318909672677198,
@@ -1237,7 +1221,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "Thl7yze3hoeFthPDbucQoA=="
+        "id": "pca_random_forest_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -1252,7 +1236,7 @@
         "libsvm_svc_gamma": 6.228418636212949e-05,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "1VcnVYEGEeR9Bj0G3yCeuw=="
+        "id": "polynomial_libsvm_svc_2"
     },
     {
         "pca_keep_variance": 0.5196168260264014,
@@ -1272,7 +1256,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "ZoYJCcmzjbxVJkBY_a8LXg=="
+        "id": "pca_xgradient_boosting_3"
     },
     {
         "pca_keep_variance": 0.9105337935118967,
@@ -1287,7 +1271,7 @@
         "decision_tree_max_depth": 1.2686347748438038,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "LE6Ft5hrHi4VIGRwuwwyBA=="
+        "id": "pca_decision_tree_6"
     },
     {
         "pca_keep_variance": 0.9834788176370453,
@@ -1302,7 +1286,7 @@
         "libsvm_svc_gamma": 0.08387107349232122,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "H9ivXEmlmjmTqgdgu6sTFA=="
+        "id": "pca_libsvm_svc_5"
     },
     {
         "pca_keep_variance": 0.7998097300713684,
@@ -1318,7 +1302,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "ehOCT2rZGc0YfW8FlKL4xA=="
+        "id": "pca_random_forest_8"
     },
     {
         "polynomial_include_bias": 0,
@@ -1327,7 +1311,7 @@
         "qda_reg_param": 4.536738801087581,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "yhGDfk5xlUxOUp2qFrJXmA=="
+        "id": "polynomial_qda_1"
     },
     {
         "pca_keep_variance": 0.6935841248815835,
@@ -1344,7 +1328,7 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "wa8su8kmpeeOQYHmY_NkGw=="
+        "id": "pca_gradient_boosting_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -1362,7 +1346,7 @@
         "gradient_boosting_max_depth": 7,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "ed4u46_qeoladH1KuUErlA=="
+        "id": "polynomial_gradient_boosting_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -1378,7 +1362,7 @@
         "decision_tree_max_depth": 1.400369145910709,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "t5RICeR7RgxzX5aE_fWTnw=="
+        "id": "polynomial_decision_tree_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -1399,7 +1383,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "7LdMTxZQRANOJXm6Xh2ajg=="
+        "id": "polynomial_xgradient_boosting_10"
     },
     {
         "polynomial_include_bias": 1,
@@ -1413,7 +1397,7 @@
         "libsvm_svc_gamma": 0.03563979711697572,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "pIwjxyO2ZEa_EcCHDuY9eQ=="
+        "id": "polynomial_libsvm_svc_3"
     },
     {
         "polynomial_include_bias": 0,
@@ -1429,7 +1413,7 @@
         "decision_tree_max_depth": 0.9178644977293005,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "m5gJIDOL32EPD59tOVyqHg=="
+        "id": "polynomial_decision_tree_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -1445,7 +1429,7 @@
         "decision_tree_max_depth": 0.23249033935191155,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "XOT9kjPapE2-Ru_Im6-q0A=="
+        "id": "polynomial_decision_tree_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -1466,7 +1450,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "MwpoU2R6VzW5sH1zl5VrxA=="
+        "id": "polynomial_xgradient_boosting_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -1476,7 +1460,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "3c3DziCuViNM_0_qutCO_Q=="
+        "id": "polynomial_multinomial_nb_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -1485,7 +1469,7 @@
         "qda_reg_param": 6.3861192685261585,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "L9FJi7wzGSSWTv5F9NoXPw=="
+        "id": "polynomial_qda_2"
     },
     {
         "polynomial_include_bias": 1,
@@ -1495,7 +1479,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "6bNQCMXxxwasnux6jDsHoA=="
+        "id": "polynomial_bernoulli_nb_1"
     },
     {
         "pca_keep_variance": 0.9610538538091908,
@@ -1512,7 +1496,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "Mq8HeXv1B3tR9eWlIvzwwQ=="
+        "id": "pca_gradient_boosting_5"
     },
     {
         "pca_keep_variance": 0.5043778583813644,
@@ -1525,7 +1509,7 @@
         "libsvm_svc_gamma": 6.59856573163846e-05,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "85jsts5mnwW9CFZ5h0YWAA=="
+        "id": "pca_libsvm_svc_6"
     },
     {
         "pca_keep_variance": 0.6788832331982236,
@@ -1533,17 +1517,17 @@
         "qda_reg_param": 5.463219698104086,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "dgZcpDsVinfy_M6o3Qi4bA=="
+        "id": "pca_qda_2"
     },
     {
         "pca_keep_variance": 0.5054198508581922,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 62,
+        "k_nearest_neighbors_n_neighbors": 22,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "CaohsCjxZosfyC0ro9PPwA=="
+        "id": "pca_k_nearest_neighbors_3"
     },
     {
         "pca_keep_variance": 0.7300299189885511,
@@ -1559,7 +1543,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "V1DE3XQZW2-pQokuemBI0w=="
+        "id": "pca_random_forest_9"
     },
     {
         "pca_keep_variance": 0.8326679337851615,
@@ -1576,7 +1560,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "dZZ_JuppqGJpithvVIEkYg=="
+        "id": "pca_gradient_boosting_6"
     },
     {
         "pca_keep_variance": 0.6126500051821586,
@@ -1593,7 +1577,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "BjoI55G8NswgzPlPMyiuTQ=="
+        "id": "pca_gradient_boosting_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -1609,7 +1593,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "EtdC4HT2_epOVtC4V3pyvA=="
+        "id": "polynomial_extra_trees_6"
     },
     {
         "pca_keep_variance": 0.6584841829663992,
@@ -1626,7 +1610,7 @@
         "gradient_boosting_max_depth": 10,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "yVHYLJ-L8b8VUE889eo0kA=="
+        "id": "pca_gradient_boosting_8"
     },
     {
         "pca_keep_variance": 0.9581202881231994,
@@ -1642,17 +1626,17 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "i_0DcoRVTUa6ZktfRC5qvg=="
+        "id": "pca_random_forest_10"
     },
     {
         "pca_keep_variance": 0.652866974752131,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 12,
+        "k_nearest_neighbors_n_neighbors": 11,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "hkHS9NAt9CdBsCbuhitOAQ=="
+        "id": "pca_k_nearest_neighbors_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -1668,14 +1652,14 @@
         "decision_tree_max_depth": 1.0978787389164615,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "DEr2sIHjsPbRDyGebpmQ8w=="
+        "id": "polynomial_decision_tree_7"
     },
     {
         "pca_keep_variance": 0.7351986155729785,
         "pca_whiten": 1,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "RgM7-D59r-OH-FigsRD9vg=="
+        "id": "pca_gaussian_nb_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -1684,7 +1668,7 @@
         "qda_reg_param": 7.406913878555962,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "FDVNEqVigYa1iP5lYh00mg=="
+        "id": "polynomial_qda_3"
     },
     {
         "pca_keep_variance": 0.9521099439542289,
@@ -1693,7 +1677,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "6vIX-825-8kNDfwgbUvd6w=="
+        "id": "pca_bernoulli_nb_0"
     },
     {
         "pca_keep_variance": 0.9141895164411076,
@@ -1707,7 +1691,7 @@
         "libsvm_svc_gamma": 0.004491044167388798,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "mtZ8widjY0Bo3XKhhQG6PA=="
+        "id": "pca_libsvm_svc_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -1723,7 +1707,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "9meDan5Tz-b1n0da2s-fvA=="
+        "id": "polynomial_extra_trees_7"
     },
     {
         "pca_keep_variance": 0.6519685410982825,
@@ -1732,7 +1716,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "OwvAXPlC6H7KaVARDkp4aA=="
+        "id": "pca_bernoulli_nb_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -1742,17 +1726,17 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "_fg-KvmJ7R5wWyO3AAmSeQ=="
+        "id": "polynomial_multinomial_nb_3"
     },
     {
         "pca_keep_variance": 0.5599616363701141,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 8,
+        "k_nearest_neighbors_n_neighbors": 17,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "wolfw6U24F0lzPNxFEIgVQ=="
+        "id": "pca_k_nearest_neighbors_5"
     },
     {
         "pca_keep_variance": 0.9057950704290895,
@@ -1769,19 +1753,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "YiUvybH89NfYCM8XeZQPZg=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "lda_shrinkage": "manual",
-        "lda_shrinkage_factor": 0.11410688174048134,
-        "lda_n_components": 117,
-        "lda_tol": 1.516693082912917e-05,
-        "pre-processor": "polynomial",
-        "model": "lda",
-        "id": "VMvDr28EijIT8GE76VE6Iw=="
+        "id": "pca_gradient_boosting_9"
     },
     {
         "pca_keep_variance": 0.77979700752118,
@@ -1801,7 +1773,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "f1QKLe4BD3h6wq-o8VWcVg=="
+        "id": "pca_xgradient_boosting_4"
     },
     {
         "pca_keep_variance": 0.7072754641714218,
@@ -1817,7 +1789,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "wA2jTiiBjMAbi0EUO8idBg=="
+        "id": "pca_random_forest_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -1834,7 +1806,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "6FSHtJ66yCtCmv84oWlTpw=="
+        "id": "polynomial_random_forest_8"
     },
     {
         "polynomial_include_bias": 0,
@@ -1850,7 +1822,7 @@
         "decision_tree_max_depth": 1.8262351162143504,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "1vJZytTrN0FEbIjOgKcrxA=="
+        "id": "polynomial_decision_tree_8"
     },
     {
         "pca_keep_variance": 0.8038633503947794,
@@ -1866,7 +1838,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "p2jvp27DrRUz3mlCVhiBIQ=="
+        "id": "pca_random_forest_12"
     },
     {
         "pca_keep_variance": 0.7963172293911361,
@@ -1883,17 +1855,17 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "bkPSUlsXG1Q3NcSJE3uyFA=="
+        "id": "pca_gradient_boosting_10"
     },
     {
         "pca_keep_variance": 0.5954730239151065,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 14,
+        "k_nearest_neighbors_n_neighbors": 21,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "tCBw_rJqptLYBJ7BqSySPQ=="
+        "id": "pca_k_nearest_neighbors_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -1903,7 +1875,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "q2Ml3cS3GHo3iNIrLFqwsw=="
+        "id": "polynomial_multinomial_nb_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -1924,7 +1896,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "3oi7BI-A6rwG9a9wu-24zw=="
+        "id": "polynomial_xgradient_boosting_12"
     },
     {
         "pca_keep_variance": 0.7408254086752515,
@@ -1932,7 +1904,7 @@
         "qda_reg_param": 2.6341132921983847,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "CjgKOsEMT9y2UG9dnm8dvw=="
+        "id": "pca_qda_3"
     },
     {
         "pca_keep_variance": 0.7300054737624486,
@@ -1941,7 +1913,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "dNZXZHqGPiD1kq-STUjySg=="
+        "id": "pca_bernoulli_nb_2"
     },
     {
         "polynomial_include_bias": 1,
@@ -1958,23 +1930,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "FTdfMmUvNNbj_UxGl038JA=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 75.03875754413339,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 2,
-        "libsvm_svc_coef0": -0.1021358470843241,
-        "libsvm_svc_tol": 0.0001722698971672907,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 2.4121704872402847,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "Cn6msEih2DWVfb_wV6AElg=="
+        "id": "polynomial_random_forest_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -1990,7 +1946,7 @@
         "decision_tree_max_depth": 0.9113551730277156,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "5XdhzHze7CI7DRl8J5bVzA=="
+        "id": "polynomial_decision_tree_9"
     },
     {
         "pca_keep_variance": 0.5874490762116754,
@@ -2000,7 +1956,7 @@
         "k_nearest_neighbors_n_neighbors": 8,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "iR5Q99KoBFZKf5AoqdCmqQ=="
+        "id": "pca_k_nearest_neighbors_7"
     },
     {
         "polynomial_include_bias": 1,
@@ -2016,7 +1972,7 @@
         "decision_tree_max_depth": 0.03521218313302277,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "_MTxJPEf98ZflqkC9TLifA=="
+        "id": "polynomial_decision_tree_10"
     },
     {
         "pca_keep_variance": 0.6148162994354659,
@@ -2030,7 +1986,7 @@
         "libsvm_svc_gamma": 0.3364700662622655,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "F-VZuQwwR1f783PJ242NSA=="
+        "id": "pca_libsvm_svc_8"
     },
     {
         "polynomial_include_bias": 1,
@@ -2040,14 +1996,14 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "v3u4e0E3zzIbT-cDgEXPwQ=="
+        "id": "polynomial_multinomial_nb_5"
     },
     {
         "pca_keep_variance": 0.9685207566902416,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "saRr2-45JawtV_bBximWNQ=="
+        "id": "pca_gaussian_nb_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -2065,7 +2021,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "xuEved8noRnlGdXIXGRsXg=="
+        "id": "polynomial_gradient_boosting_5"
     },
     {
         "pca_keep_variance": 0.7970935351090442,
@@ -2080,7 +2036,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "yvT0g-_ah6-N-Bm2rS9peA=="
+        "id": "pca_extra_trees_4"
     },
     {
         "pca_keep_variance": 0.6286664020830162,
@@ -2095,7 +2051,7 @@
         "decision_tree_max_depth": 1.5828110672503004,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "Yg4_03BBihGi_5nS6iydKw=="
+        "id": "pca_decision_tree_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -2111,7 +2067,7 @@
         "decision_tree_max_depth": 1.739148906852438,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "IZGpMO4QyMRFeRPO9S--0A=="
+        "id": "polynomial_decision_tree_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -2127,7 +2083,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "Qou79KaWxH4YleNk3FW7_A=="
+        "id": "polynomial_extra_trees_8"
     },
     {
         "polynomial_include_bias": 1,
@@ -2143,7 +2099,7 @@
         "decision_tree_max_depth": 1.4258046164073543,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "hUAMRVvlTv44tTCrFiWhrw=="
+        "id": "polynomial_decision_tree_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -2151,10 +2107,10 @@
         "polynomial_degree": 3,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 53,
+        "k_nearest_neighbors_n_neighbors": 27,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "txuqo4bGoGmi2RwPHYsEUw=="
+        "id": "polynomial_k_nearest_neighbors_0"
     },
     {
         "pca_keep_variance": 0.5337823622102739,
@@ -2169,7 +2125,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "PlsTZwftP2X1dTSoe-NkEg=="
+        "id": "pca_extra_trees_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -2190,7 +2146,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "n_CLpHdd6bFl7lOtdDWIXw=="
+        "id": "polynomial_xgradient_boosting_13"
     },
     {
         "pca_keep_variance": 0.8140427787799164,
@@ -2210,7 +2166,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "hEhxvAyNzwgpYCDo9vdh6A=="
+        "id": "pca_xgradient_boosting_5"
     },
     {
         "pca_keep_variance": 0.7419907846345513,
@@ -2230,7 +2186,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "mfknPCvwJ5ACqa6jU3M6tA=="
+        "id": "pca_xgradient_boosting_6"
     },
     {
         "pca_keep_variance": 0.8173458126344775,
@@ -2245,7 +2201,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "I63lsnEYlW4hGa5LJFvPHA=="
+        "id": "pca_extra_trees_6"
     },
     {
         "pca_keep_variance": 0.5401559056593902,
@@ -2260,7 +2216,7 @@
         "libsvm_svc_gamma": 0.00991344775806541,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "ZNY2hjvgjADrtGsCacdCrg=="
+        "id": "pca_libsvm_svc_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -2278,7 +2234,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "JLPEz7AEeBXm5W65UP9emQ=="
+        "id": "polynomial_gradient_boosting_6"
     },
     {
         "pca_keep_variance": 0.5948693778391597,
@@ -2294,7 +2250,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "C3Mck5RXdt_pRhQhLAIf2g=="
+        "id": "pca_random_forest_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -2312,7 +2268,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "_UdKmVTSOxTb-mPa4-wMyA=="
+        "id": "polynomial_gradient_boosting_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -2330,7 +2286,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "RstC32edCnE3Mv4ZTio2WQ=="
+        "id": "polynomial_gradient_boosting_8"
     },
     {
         "polynomial_include_bias": 1,
@@ -2346,7 +2302,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "GDW3tYfSgzmD9JXf-d4SuA=="
+        "id": "polynomial_extra_trees_9"
     },
     {
         "pca_keep_variance": 0.8814926797626845,
@@ -2362,7 +2318,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "VUPICVBwsM4SsacYJckdGQ=="
+        "id": "pca_random_forest_14"
     },
     {
         "polynomial_include_bias": 0,
@@ -2373,23 +2329,7 @@
         "lda_tol": 0.09376746115682369,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "Qx2t-Da2BjaLh_ZY8Byk5Q=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 1153.6340929078215,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 1,
-        "libsvm_svc_coef0": 0.7192089941099697,
-        "libsvm_svc_tol": 0.00010242746254229712,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 0.02248173153774186,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "TkSVlh8nVyQEHa2ttjINnA=="
+        "id": "polynomial_lda_0"
     },
     {
         "polynomial_include_bias": 0,
@@ -2410,17 +2350,17 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "qXwCa24I-J1fM6GO4rs3wg=="
+        "id": "polynomial_xgradient_boosting_14"
     },
     {
         "pca_keep_variance": 0.8286352836955196,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 12,
+        "k_nearest_neighbors_n_neighbors": 28,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "TGaNlDayuGsCNolklcS_4w=="
+        "id": "pca_k_nearest_neighbors_8"
     },
     {
         "pca_keep_variance": 0.9525417347056528,
@@ -2437,7 +2377,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "VFoTqrQKsqF5FgbDyQEkyg=="
+        "id": "pca_gradient_boosting_11"
     },
     {
         "pca_keep_variance": 0.6958175440791945,
@@ -2447,7 +2387,7 @@
         "lda_tol": 0.0889691184490508,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "59u--3FxiClqiuUGCdAfBA=="
+        "id": "pca_lda_2"
     },
     {
         "pca_keep_variance": 0.8473495979880759,
@@ -2464,7 +2404,7 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "lGSXGCoR-rU7_hfu0E3xfA=="
+        "id": "pca_gradient_boosting_12"
     },
     {
         "pca_keep_variance": 0.6903778817764105,
@@ -2484,7 +2424,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "ArhxEZs5pig6r0gG7LY89A=="
+        "id": "pca_xgradient_boosting_7"
     },
     {
         "pca_keep_variance": 0.8214008266667476,
@@ -2501,7 +2441,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "BRIguf4-QJ3XY8OYEd4B8A=="
+        "id": "pca_gradient_boosting_13"
     },
     {
         "pca_keep_variance": 0.685226806820418,
@@ -2517,17 +2457,17 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "qu9OCqGZNjsTNMKrR3wFxQ=="
+        "id": "pca_random_forest_15"
     },
     {
         "pca_keep_variance": 0.9337748587009325,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 1,
+        "k_nearest_neighbors_n_neighbors": 4,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "YqjxAOkTEGiaCYaiFvpWyw=="
+        "id": "pca_k_nearest_neighbors_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -2545,7 +2485,7 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "h8izqKcG9452LJ5o40Dl0w=="
+        "id": "polynomial_gradient_boosting_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -2561,7 +2501,7 @@
         "decision_tree_max_depth": 0.08529488543874852,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "NzB0TQln3hzsDPNkF8Mu8Q=="
+        "id": "polynomial_decision_tree_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -2571,7 +2511,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "o74ypRsiG2GIZWcP0nLuZQ=="
+        "id": "polynomial_multinomial_nb_6"
     },
     {
         "pca_keep_variance": 0.7085345906601682,
@@ -2580,7 +2520,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "GreR8KGe-gbRC3Tw2OWtow=="
+        "id": "pca_bernoulli_nb_3"
     },
     {
         "pca_keep_variance": 0.747103134181366,
@@ -2600,7 +2540,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "NHZXcQ5SyOFS84RALZnnjw=="
+        "id": "pca_xgradient_boosting_8"
     },
     {
         "polynomial_include_bias": 1,
@@ -2618,7 +2558,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "byiwD4wLu4TgT69PFdRhpw=="
+        "id": "polynomial_gradient_boosting_10"
     },
     {
         "pca_keep_variance": 0.8722180151242596,
@@ -2628,7 +2568,7 @@
         "lda_tol": 0.03373891367106888,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "_W8gSRoacaFGHJKsi1i72w=="
+        "id": "pca_lda_3"
     },
     {
         "pca_keep_variance": 0.7462545250218495,
@@ -2637,7 +2577,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "0zbexNwysPAfxxuqktrcwA=="
+        "id": "pca_bernoulli_nb_4"
     },
     {
         "polynomial_include_bias": 1,
@@ -2653,35 +2593,17 @@
         "decision_tree_max_depth": 0.4027779823093942,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "oPAZ5VVa2JIQ55FYbmVzaw=="
+        "id": "polynomial_decision_tree_14"
     },
     {
         "pca_keep_variance": 0.663284026827599,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 2,
+        "k_nearest_neighbors_n_neighbors": 10,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "cG1nTysqUOkZzJk8UJzN8g=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 3,
-        "gradient_boosting_loss": "deviance",
-        "gradient_boosting_max_leaf_nodes": -1,
-        "gradient_boosting_learning_rate": 0.03172457498710658,
-        "gradient_boosting_min_samples_leaf": 10,
-        "gradient_boosting_n_estimators": 360,
-        "gradient_boosting_subsample": 0.44895975701258467,
-        "gradient_boosting_min_weight_fraction_leaf": 0.0,
-        "gradient_boosting_max_features": 4.582682728950376,
-        "gradient_boosting_min_samples_split": 3,
-        "gradient_boosting_max_depth": 3,
-        "pre-processor": "polynomial",
-        "model": "gradient_boosting",
-        "id": "4qYOTb3G4IQiGIMb4M11ZA=="
+        "id": "pca_k_nearest_neighbors_10"
     },
     {
         "pca_keep_variance": 0.6939915868891253,
@@ -2698,17 +2620,17 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "QOyaSC-v4OkeLjOiKLopMA=="
+        "id": "pca_gradient_boosting_14"
     },
     {
         "pca_keep_variance": 0.6040905116475435,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 1,
+        "k_nearest_neighbors_n_neighbors": 4,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "0lIuNB8RfBe716o3Nop39g=="
+        "id": "pca_k_nearest_neighbors_11"
     },
     {
         "pca_keep_variance": 0.5430742047674294,
@@ -2724,7 +2646,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "TMV6dQu_41IXPptTCl11iQ=="
+        "id": "pca_random_forest_16"
     },
     {
         "polynomial_include_bias": 1,
@@ -2741,7 +2663,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "dZddNwpZrGjIlSqx_6KHow=="
+        "id": "polynomial_random_forest_10"
     },
     {
         "polynomial_include_bias": 1,
@@ -2752,7 +2674,7 @@
         "lda_tol": 1.4187472085387883e-05,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "LOy11cYzdf4KKik_LWuGzw=="
+        "id": "polynomial_lda_1"
     },
     {
         "pca_keep_variance": 0.678243821905175,
@@ -2772,7 +2694,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "mcWPXuHGTNKCZkaI9UnVQQ=="
+        "id": "pca_xgradient_boosting_9"
     },
     {
         "polynomial_include_bias": 1,
@@ -2790,7 +2712,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "uXzXeLK1w9ohruuH6X7yHw=="
+        "id": "polynomial_gradient_boosting_11"
     },
     {
         "polynomial_include_bias": 0,
@@ -2808,7 +2730,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "2kIRboAkrYP-TyVLotcGRw=="
+        "id": "polynomial_gradient_boosting_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -2826,7 +2748,7 @@
         "gradient_boosting_max_depth": 2,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "S6gDHv5kC5R-rputfhFw_g=="
+        "id": "polynomial_gradient_boosting_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -2847,7 +2769,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "_Z7efBnviP102TVXcVoFlw=="
+        "id": "polynomial_xgradient_boosting_15"
     },
     {
         "pca_keep_variance": 0.639667664654931,
@@ -2864,7 +2786,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "4YGF0fj_zyiZ8ONx1tqvvw=="
+        "id": "pca_gradient_boosting_15"
     },
     {
         "pca_keep_variance": 0.8038446997645861,
@@ -2881,7 +2803,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "Tn64SH3QCJ36G3nlwdBtCQ=="
+        "id": "pca_gradient_boosting_16"
     },
     {
         "polynomial_include_bias": 1,
@@ -2891,7 +2813,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "dBWnM_26hUtYqGg1BbQCMQ=="
+        "id": "polynomial_bernoulli_nb_2"
     },
     {
         "pca_keep_variance": 0.993616444961872,
@@ -2908,7 +2830,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "kqF99kQ247FF4hVAW2m-xw=="
+        "id": "pca_gradient_boosting_17"
     },
     {
         "polynomial_include_bias": 0,
@@ -2918,7 +2840,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "b3r4oU2ffb9pToZkEbKzkw=="
+        "id": "polynomial_multinomial_nb_7"
     },
     {
         "pca_keep_variance": 0.7408463065754762,
@@ -2933,7 +2855,7 @@
         "decision_tree_max_depth": 1.6388985155855709,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "zkfZ0ZN4s8qxdzaCKo8nIg=="
+        "id": "pca_decision_tree_8"
     },
     {
         "pca_keep_variance": 0.7953632234365173,
@@ -2950,7 +2872,7 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "iBue7dVyTDMUjzE1Irt6LA=="
+        "id": "pca_gradient_boosting_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -2971,7 +2893,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "ur8A0F9kiNiL-2IRj2dNwA=="
+        "id": "polynomial_xgradient_boosting_16"
     },
     {
         "pca_keep_variance": 0.9096267881906221,
@@ -2986,7 +2908,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "be-Ypqc4lRdtXJng-xPO8Q=="
+        "id": "pca_extra_trees_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -3002,41 +2924,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "E2EPsTndAaCXUgEO5xPy4A=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 7835.089528527571,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 1,
-        "libsvm_svc_coef0": 0.9504582259033152,
-        "libsvm_svc_tol": 0.0034434398375332263,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 0.0017766024628941821,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "-4dA4AEn_zSdPQvvtyeZzA=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "gradient_boosting_loss": "deviance",
-        "gradient_boosting_max_leaf_nodes": -1,
-        "gradient_boosting_learning_rate": 0.015345122883706498,
-        "gradient_boosting_min_samples_leaf": 11,
-        "gradient_boosting_n_estimators": 370,
-        "gradient_boosting_subsample": 0.49382555118795435,
-        "gradient_boosting_min_weight_fraction_leaf": 0.0,
-        "gradient_boosting_max_features": 2.800677999107796,
-        "gradient_boosting_min_samples_split": 13,
-        "gradient_boosting_max_depth": 3,
-        "pre-processor": "polynomial",
-        "model": "gradient_boosting",
-        "id": "K9CImKn8Gvo-Sa6XXxQNYw=="
+        "id": "polynomial_extra_trees_10"
     },
     {
         "pca_keep_variance": 0.50899513527096,
@@ -3051,7 +2939,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "O1la9tJEPZZdq5QaoSR5yg=="
+        "id": "pca_extra_trees_8"
     },
     {
         "polynomial_include_bias": 1,
@@ -3069,7 +2957,7 @@
         "gradient_boosting_max_depth": 10,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "de9ZWjMYYxFNshZ4C9HXeg=="
+        "id": "polynomial_gradient_boosting_14"
     },
     {
         "pca_keep_variance": 0.7362456086316951,
@@ -3078,7 +2966,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "n3tSQecW6Q2EOX1NqkSLKw=="
+        "id": "pca_bernoulli_nb_5"
     },
     {
         "polynomial_include_bias": 0,
@@ -3088,7 +2976,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "0S_u8ouO7Wl8vlKNLS_alA=="
+        "id": "polynomial_multinomial_nb_8"
     },
     {
         "polynomial_include_bias": 0,
@@ -3102,7 +2990,7 @@
         "libsvm_svc_gamma": 0.012279937672388934,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "ylkDYgE0pjoQ5ahb3WkTCA=="
+        "id": "polynomial_libsvm_svc_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -3112,7 +3000,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "Tv2fGdasHfCN8j6joqNOHw=="
+        "id": "polynomial_multinomial_nb_9"
     },
     {
         "pca_keep_variance": 0.5344123826912479,
@@ -3127,7 +3015,7 @@
         "decision_tree_max_depth": 0.937058982352531,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "fsVv1HNL-pWgl5oV2soyhw=="
+        "id": "pca_decision_tree_9"
     },
     {
         "polynomial_include_bias": 1,
@@ -3144,7 +3032,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "0Gc_axKhosWhCNpkAyMyfg=="
+        "id": "polynomial_random_forest_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -3160,7 +3048,7 @@
         "decision_tree_max_depth": 1.97767316309913,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "8HQUGcplWIb9NiArlaamvQ=="
+        "id": "polynomial_decision_tree_15"
     },
     {
         "polynomial_include_bias": 1,
@@ -3181,7 +3069,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "KAP1RR8jC8HN4cdEY0qCEg=="
+        "id": "polynomial_xgradient_boosting_17"
     },
     {
         "pca_keep_variance": 0.6897042462974935,
@@ -3201,7 +3089,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "alB1kLaFzqKQQvY53GTZQQ=="
+        "id": "pca_xgradient_boosting_10"
     },
     {
         "pca_keep_variance": 0.5002866428317043,
@@ -3216,7 +3104,7 @@
         "decision_tree_max_depth": 1.3494699050456354,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "0z4a93MkTG7gBlV_t6n4-Q=="
+        "id": "pca_decision_tree_10"
     },
     {
         "polynomial_include_bias": 0,
@@ -3237,7 +3125,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "YHPji8qCRtW42YACwSh79w=="
+        "id": "polynomial_xgradient_boosting_18"
     },
     {
         "pca_keep_variance": 0.9767959212546722,
@@ -3254,7 +3142,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "wdnmVgWnISvhqQPQCSrjgw=="
+        "id": "pca_gradient_boosting_19"
     },
     {
         "pca_keep_variance": 0.7652663714992852,
@@ -3264,7 +3152,7 @@
         "lda_tol": 0.0942029938656634,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "DlMhiqZPsDr_ipWUWGhJwQ=="
+        "id": "pca_lda_4"
     },
     {
         "polynomial_include_bias": 0,
@@ -3272,10 +3160,10 @@
         "polynomial_degree": 2,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 40,
+        "k_nearest_neighbors_n_neighbors": 18,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "VXSrVJvTXqqNPGlpH2YHpQ=="
+        "id": "polynomial_k_nearest_neighbors_1"
     },
     {
         "polynomial_include_bias": 0,
@@ -3292,7 +3180,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "R_6LMxBin1yI3VRveLm0Qg=="
+        "id": "polynomial_random_forest_12"
     },
     {
         "pca_keep_variance": 0.8919756325997102,
@@ -3312,7 +3200,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "rEKzlRJZenmffTUK_0Uitw=="
+        "id": "pca_xgradient_boosting_11"
     },
     {
         "pca_keep_variance": 0.7434775877597952,
@@ -3332,7 +3220,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "yOC_bELzHdCEHgKnYlN4sg=="
+        "id": "pca_xgradient_boosting_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -3350,7 +3238,7 @@
         "gradient_boosting_max_depth": 2,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "kOLzIXr9sEpt_Wxv1qjupw=="
+        "id": "polynomial_gradient_boosting_15"
     },
     {
         "polynomial_include_bias": 0,
@@ -3366,7 +3254,7 @@
         "decision_tree_max_depth": 1.2596521938820908,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "sPhB0pVxVPjD31leSCSfNw=="
+        "id": "polynomial_decision_tree_16"
     },
     {
         "polynomial_include_bias": 0,
@@ -3383,7 +3271,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "q2HnuYjbJQ2_4nfwKV5AEQ=="
+        "id": "polynomial_random_forest_13"
     },
     {
         "polynomial_include_bias": 0,
@@ -3401,17 +3289,17 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "S1DppxLg6zUzqXzufnyF4Q=="
+        "id": "polynomial_gradient_boosting_16"
     },
     {
         "pca_keep_variance": 0.5068087427555497,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 5,
+        "k_nearest_neighbors_n_neighbors": 6,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "j9Y3uHZZYMImrjGSGyWLwA=="
+        "id": "pca_k_nearest_neighbors_12"
     },
     {
         "pca_keep_variance": 0.8832894510011238,
@@ -3426,7 +3314,7 @@
         "decision_tree_max_depth": 0.22490209710239029,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "NNnPx6IGvB6tn742R4DHQw=="
+        "id": "pca_decision_tree_11"
     },
     {
         "polynomial_include_bias": 0,
@@ -3436,7 +3324,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "50FpdxtwlZwvcD7JQSxMYg=="
+        "id": "polynomial_multinomial_nb_10"
     },
     {
         "pca_keep_variance": 0.9185761317646086,
@@ -3446,7 +3334,7 @@
         "lda_tol": 0.0008493943602848982,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "CxAcaESQ2wXH2Iaii8o0yA=="
+        "id": "pca_lda_5"
     },
     {
         "pca_keep_variance": 0.8806294476937322,
@@ -3454,7 +3342,7 @@
         "qda_reg_param": 9.038451388438,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "AV6_lL97mlsOK28A-B-Ubw=="
+        "id": "pca_qda_4"
     },
     {
         "polynomial_include_bias": 1,
@@ -3468,14 +3356,14 @@
         "libsvm_svc_gamma": 0.021402862365382833,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "FMc9_sU7Y1gl0bXHNpaGcQ=="
+        "id": "polynomial_libsvm_svc_5"
     },
     {
         "pca_keep_variance": 0.788405168322714,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "0f42z-40S4JQjfecTquwwA=="
+        "id": "pca_gaussian_nb_7"
     },
     {
         "pca_keep_variance": 0.5235366601169742,
@@ -3488,7 +3376,7 @@
         "libsvm_svc_gamma": 5.749079407337729e-05,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "jR5VxdjEpMzDK0ZNF8u7yA=="
+        "id": "pca_libsvm_svc_10"
     },
     {
         "polynomial_include_bias": 0,
@@ -3498,7 +3386,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "NhAC4beI-ewTL6SpkhpOJg=="
+        "id": "polynomial_multinomial_nb_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -3519,7 +3407,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "zo4_7fk5h0uR43gmqat3lg=="
+        "id": "polynomial_xgradient_boosting_19"
     },
     {
         "pca_keep_variance": 0.7303847246163753,
@@ -3534,7 +3422,7 @@
         "decision_tree_max_depth": 0.6451586030048986,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "PzJsnAS6Wo8x_BbXJy0b4g=="
+        "id": "pca_decision_tree_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -3550,7 +3438,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "LKj1qF4AzHjH0a2mIuThGQ=="
+        "id": "polynomial_extra_trees_11"
     },
     {
         "pca_keep_variance": 0.7838574351775407,
@@ -3570,7 +3458,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "JpM8ZhZ_qnrXZeR2JGkjXw=="
+        "id": "pca_xgradient_boosting_13"
     },
     {
         "polynomial_include_bias": 0,
@@ -3579,7 +3467,7 @@
         "qda_reg_param": 3.4276128807933848,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "8cvEgv5_aeN7JK0aGWu0Yg=="
+        "id": "polynomial_qda_4"
     },
     {
         "polynomial_include_bias": 1,
@@ -3590,7 +3478,7 @@
         "k_nearest_neighbors_n_neighbors": 23,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "-A6-_ZASGrRQLrDeW1vpsg=="
+        "id": "polynomial_k_nearest_neighbors_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -3606,7 +3494,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "PzAZcBQgdkGQGznnXPRmMQ=="
+        "id": "polynomial_extra_trees_12"
     },
     {
         "polynomial_include_bias": 1,
@@ -3616,7 +3504,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "2rTQvtuoXuJQPKFK4Pthgw=="
+        "id": "polynomial_multinomial_nb_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -3632,7 +3520,7 @@
         "decision_tree_max_depth": 0.8367409553750951,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "lEc6IZUuYZdh18OuXuyaow=="
+        "id": "polynomial_decision_tree_17"
     },
     {
         "polynomial_include_bias": 0,
@@ -3646,7 +3534,7 @@
         "libsvm_svc_gamma": 0.030508965029561363,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "dlZbtdqDIxciwDuxOAA19A=="
+        "id": "polynomial_libsvm_svc_6"
     },
     {
         "pca_keep_variance": 0.9658102461892412,
@@ -3662,7 +3550,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "rMFv0Rx5PZGmlotn_xmBlQ=="
+        "id": "pca_random_forest_17"
     },
     {
         "pca_keep_variance": 0.8088039860145081,
@@ -3677,7 +3565,7 @@
         "decision_tree_max_depth": 0.8176175925788738,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "uF-LfqEMfNrkoeiXn8qDsQ=="
+        "id": "pca_decision_tree_13"
     },
     {
         "pca_keep_variance": 0.9674638230282109,
@@ -3692,7 +3580,7 @@
         "decision_tree_max_depth": 0.1626634905371127,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "nBTyT-aCOBwa642DUaxCWA=="
+        "id": "pca_decision_tree_14"
     },
     {
         "pca_keep_variance": 0.717174465585735,
@@ -3708,7 +3596,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "nTfaFnjWmL8qajpWmGhslQ=="
+        "id": "pca_random_forest_18"
     },
     {
         "pca_keep_variance": 0.6045344767358756,
@@ -3724,7 +3612,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "rDcfEPM2qLIFWw_JvyA0Cg=="
+        "id": "pca_random_forest_19"
     },
     {
         "pca_keep_variance": 0.6541706262225344,
@@ -3739,7 +3627,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "gb1hD7QlA7uUcDcjwAg-uQ=="
+        "id": "pca_extra_trees_9"
     },
     {
         "polynomial_include_bias": 1,
@@ -3756,7 +3644,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "7YrJxFtKrLThySsS3L49-w=="
+        "id": "polynomial_random_forest_14"
     },
     {
         "polynomial_include_bias": 0,
@@ -3771,7 +3659,7 @@
         "libsvm_svc_gamma": 0.4186486126646272,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "MDWsLW-47B2pWVmRjBNU_A=="
+        "id": "polynomial_libsvm_svc_7"
     },
     {
         "polynomial_include_bias": 1,
@@ -3781,7 +3669,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "lsbbk7i1LXjV-bFBsA3jtQ=="
+        "id": "polynomial_multinomial_nb_13"
     },
     {
         "polynomial_include_bias": 0,
@@ -3798,7 +3686,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "T993dEWUBCY2y1QWZDn2SQ=="
+        "id": "polynomial_random_forest_15"
     },
     {
         "pca_keep_variance": 0.6995389978339973,
@@ -3814,7 +3702,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "GooJD2GaD_aT03q0SyoXXA=="
+        "id": "pca_random_forest_20"
     },
     {
         "pca_keep_variance": 0.6353326699079629,
@@ -3822,14 +3710,14 @@
         "qda_reg_param": 7.419289540315573,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "CiiFyI4UnhBdzcb-EE6JYQ=="
+        "id": "pca_qda_5"
     },
     {
         "pca_keep_variance": 0.7705665696507076,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "lKDzB8e-sWoknCuqdpNW-Q=="
+        "id": "pca_gaussian_nb_8"
     },
     {
         "pca_keep_variance": 0.5180222982226409,
@@ -3837,7 +3725,7 @@
         "qda_reg_param": 1.5054207801001407,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "cjNRS4YacqCH4iox43pe5A=="
+        "id": "pca_qda_6"
     },
     {
         "polynomial_include_bias": 0,
@@ -3858,7 +3746,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "GVy90vvTgEDp36p7-srnXg=="
+        "id": "polynomial_xgradient_boosting_20"
     },
     {
         "polynomial_include_bias": 1,
@@ -3868,7 +3756,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "3G1FSelkIsu2N3qvVyV77g=="
+        "id": "polynomial_bernoulli_nb_3"
     },
     {
         "polynomial_include_bias": 0,
@@ -3876,20 +3764,20 @@
         "polynomial_degree": 2,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 61,
+        "k_nearest_neighbors_n_neighbors": 25,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "G7KMb02QriulJvmsY7RxQQ=="
+        "id": "polynomial_k_nearest_neighbors_3"
     },
     {
         "pca_keep_variance": 0.5988380481776249,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 49,
+        "k_nearest_neighbors_n_neighbors": 24,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "cPjXMhQFl-gkw2BsSLgYCg=="
+        "id": "pca_k_nearest_neighbors_13"
     },
     {
         "polynomial_include_bias": 0,
@@ -3910,7 +3798,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "SThiZu8yr1L1VhAGt5iHBg=="
+        "id": "polynomial_xgradient_boosting_21"
     },
     {
         "polynomial_include_bias": 1,
@@ -3920,7 +3808,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "KXhgYHToysnYxw28y8I88A=="
+        "id": "polynomial_multinomial_nb_14"
     },
     {
         "polynomial_include_bias": 1,
@@ -3938,7 +3826,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "gyOOLu9GjBrzQgFto_Q0ew=="
+        "id": "polynomial_gradient_boosting_17"
     },
     {
         "polynomial_include_bias": 1,
@@ -3948,7 +3836,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "BTijfFsBMi2HEt1TpAZsNA=="
+        "id": "polynomial_multinomial_nb_15"
     },
     {
         "polynomial_include_bias": 1,
@@ -3956,10 +3844,10 @@
         "polynomial_degree": 2,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 7,
+        "k_nearest_neighbors_n_neighbors": 16,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "Lv_P9jMg-FQ75-83_RaTXw=="
+        "id": "polynomial_k_nearest_neighbors_4"
     },
     {
         "pca_keep_variance": 0.6774602778823936,
@@ -3974,7 +3862,7 @@
         "decision_tree_max_depth": 0.6150526555728077,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "4YRIwPidW3_59eVzm4kAlQ=="
+        "id": "pca_decision_tree_15"
     },
     {
         "polynomial_include_bias": 0,
@@ -3992,7 +3880,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "lVemPR1YVbdqCDWh9YvLzg=="
+        "id": "polynomial_gradient_boosting_18"
     },
     {
         "polynomial_include_bias": 1,
@@ -4000,10 +3888,10 @@
         "polynomial_degree": 2,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 85,
+        "k_nearest_neighbors_n_neighbors": 20,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "SsfQU--0E99qarwfAHdw2w=="
+        "id": "polynomial_k_nearest_neighbors_5"
     },
     {
         "polynomial_include_bias": 0,
@@ -4024,7 +3912,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "amhERlQgzvJdqDrwpWwtBA=="
+        "id": "polynomial_xgradient_boosting_22"
     },
     {
         "pca_keep_variance": 0.8842570267405389,
@@ -4034,7 +3922,7 @@
         "lda_tol": 0.00032856344112866694,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "aRQi7dC3YYSoMV6Mazjmyw=="
+        "id": "pca_lda_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -4051,7 +3939,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "p1_ZzCwlSl4Tk2V_8OWCGQ=="
+        "id": "polynomial_random_forest_16"
     },
     {
         "pca_keep_variance": 0.936951741051484,
@@ -4067,7 +3955,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "9KFGvPtFRKj6R6fUzjEacg=="
+        "id": "pca_random_forest_21"
     },
     {
         "polynomial_include_bias": 1,
@@ -4084,7 +3972,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "SYlRAlyQoKHGplGuiiGU5Q=="
+        "id": "polynomial_random_forest_17"
     },
     {
         "pca_keep_variance": 0.554818909604418,
@@ -4101,7 +3989,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "XStPBjT2B40juF_Kue4vnA=="
+        "id": "pca_gradient_boosting_20"
     },
     {
         "pca_keep_variance": 0.6911667138623364,
@@ -4110,7 +3998,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "v8jGNEsQ300DmHMyxse9qQ=="
+        "id": "pca_bernoulli_nb_6"
     },
     {
         "pca_keep_variance": 0.800202473039116,
@@ -4125,17 +4013,17 @@
         "libsvm_svc_gamma": 3.409746231407925e-05,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "UhNWpeur6RwaDJ4sDpuPYw=="
+        "id": "pca_libsvm_svc_11"
     },
     {
         "pca_keep_variance": 0.5309395914255393,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 3,
+        "k_nearest_neighbors_n_neighbors": 5,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "n60yvq6GDJrP3CDFXHjAqQ=="
+        "id": "pca_k_nearest_neighbors_14"
     },
     {
         "pca_keep_variance": 0.6376119625019169,
@@ -4155,7 +4043,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "0W2PEsGHGjgnj01fGX6-5w=="
+        "id": "pca_xgradient_boosting_14"
     },
     {
         "pca_keep_variance": 0.6502948821272468,
@@ -4170,7 +4058,7 @@
         "decision_tree_max_depth": 0.05150024735344627,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "OIYd-FRd1JqnHfENGUxa6w=="
+        "id": "pca_decision_tree_16"
     },
     {
         "polynomial_include_bias": 1,
@@ -4187,7 +4075,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "1t06eQfVHnfd2bNnekWBhg=="
+        "id": "polynomial_random_forest_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -4208,7 +4096,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "-R9Qxpy6WUXSM-gZXXunYA=="
+        "id": "polynomial_xgradient_boosting_23"
     },
     {
         "pca_keep_variance": 0.7611263528870054,
@@ -4223,7 +4111,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "mQ1u1dgy9PaggOSy8CujPA=="
+        "id": "pca_extra_trees_10"
     },
     {
         "pca_keep_variance": 0.7749095369892771,
@@ -4238,7 +4126,7 @@
         "decision_tree_max_depth": 1.7804179362714796,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "Ow3Hy4L2xgSg5rDiuln-rQ=="
+        "id": "pca_decision_tree_17"
     },
     {
         "pca_keep_variance": 0.8819360980727436,
@@ -4258,7 +4146,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "N1mEIMtJe7cne0TN5YpCYw=="
+        "id": "pca_xgradient_boosting_15"
     },
     {
         "pca_keep_variance": 0.5404231238479644,
@@ -4272,7 +4160,7 @@
         "libsvm_svc_gamma": 0.0004708863807229008,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "uswv-NgCPZjA75bU9HYfyA=="
+        "id": "pca_libsvm_svc_12"
     },
     {
         "polynomial_include_bias": 1,
@@ -4288,7 +4176,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "Cl_2VpgTciQKG0gj8ui8Vg=="
+        "id": "polynomial_extra_trees_13"
     },
     {
         "pca_keep_variance": 0.6211981374523142,
@@ -4303,7 +4191,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "b880bQIL8Gdr_OiDvLFNmw=="
+        "id": "pca_extra_trees_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -4314,23 +4202,7 @@
         "lda_tol": 0.0013428952064900774,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "mv1HwUj7AfJYsQsKzykJpg=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 0.1436152325849228,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 1,
-        "libsvm_svc_coef0": -0.22144605711013288,
-        "libsvm_svc_tol": 0.0027530151104987037,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 1.0902154538323718,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "owt0gOfi6bSz0-6CMu_U1A=="
+        "id": "polynomial_lda_2"
     },
     {
         "polynomial_include_bias": 0,
@@ -4346,7 +4218,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "U3tDI8n0zAjOB8E8DuxQVA=="
+        "id": "polynomial_extra_trees_14"
     },
     {
         "polynomial_include_bias": 1,
@@ -4367,7 +4239,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "g9BDq65fb6-3nZzKzIAsOg=="
+        "id": "polynomial_xgradient_boosting_24"
     },
     {
         "polynomial_include_bias": 1,
@@ -4376,7 +4248,7 @@
         "qda_reg_param": 9.750988987098916,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "i28GePeHetJBMVvaPWSp4w=="
+        "id": "polynomial_qda_5"
     },
     {
         "polynomial_include_bias": 0,
@@ -4387,7 +4259,7 @@
         "k_nearest_neighbors_n_neighbors": 8,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "_X9nJCLqFo1i3rO09xKMnw=="
+        "id": "polynomial_k_nearest_neighbors_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -4396,7 +4268,7 @@
         "qda_reg_param": 6.109132712449304,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "-ZB-C8kGtQjJjxiZO-9Nwg=="
+        "id": "polynomial_qda_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -4417,7 +4289,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "s0cERZ-idTaDD4BrMWfmhw=="
+        "id": "polynomial_xgradient_boosting_25"
     },
     {
         "polynomial_include_bias": 1,
@@ -4433,7 +4305,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "1BHLSmKO2-5N_LLZERHc4w=="
+        "id": "polynomial_extra_trees_15"
     },
     {
         "polynomial_include_bias": 0,
@@ -4449,7 +4321,7 @@
         "decision_tree_max_depth": 0.6950744277593985,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "yj66GwBTICsiMApjCKhMJw=="
+        "id": "polynomial_decision_tree_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -4461,7 +4333,7 @@
         "lda_tol": 0.00027892338845885995,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "p2GcoyWnYdWMkRs8Zz-o5A=="
+        "id": "polynomial_lda_3"
     },
     {
         "pca_keep_variance": 0.9263540207816837,
@@ -4476,7 +4348,7 @@
         "decision_tree_max_depth": 0.42690432309730664,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "4N_CxQbgayHFaXFqYlgHgw=="
+        "id": "pca_decision_tree_18"
     },
     {
         "pca_keep_variance": 0.8833120655388917,
@@ -4491,7 +4363,7 @@
         "decision_tree_max_depth": 0.3505157576740503,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "yADd5zTyMYOSRqFITqgq1w=="
+        "id": "pca_decision_tree_19"
     },
     {
         "polynomial_include_bias": 0,
@@ -4512,7 +4384,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "Wk31G21gwFVIH7HdSYbWdg=="
+        "id": "polynomial_xgradient_boosting_26"
     },
     {
         "polynomial_include_bias": 0,
@@ -4533,7 +4405,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "4nr7E5r8F6UYWddFFH2nqA=="
+        "id": "polynomial_xgradient_boosting_27"
     },
     {
         "pca_keep_variance": 0.5765381960801378,
@@ -4548,7 +4420,7 @@
         "decision_tree_max_depth": 1.3792347454188418,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "lrQkBTosX44bgwPusjuDJQ=="
+        "id": "pca_decision_tree_20"
     },
     {
         "pca_keep_variance": 0.5512532432455538,
@@ -4565,7 +4437,7 @@
         "gradient_boosting_max_depth": 7,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "A9R_ObAEnf0r9WP_x3tKow=="
+        "id": "pca_gradient_boosting_21"
     },
     {
         "polynomial_include_bias": 1,
@@ -4581,7 +4453,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "N57Xe5zF-Io4R3W7whqk_g=="
+        "id": "polynomial_extra_trees_16"
     },
     {
         "pca_keep_variance": 0.6227381016669239,
@@ -4594,7 +4466,7 @@
         "libsvm_svc_gamma": 0.00022364604894633294,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "7ODJvxiNcyKvj7whQZ6PIw=="
+        "id": "pca_libsvm_svc_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -4611,7 +4483,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "RCnEfshQk5WrQ4SkZvqfaw=="
+        "id": "polynomial_random_forest_19"
     },
     {
         "pca_keep_variance": 0.5732157849444233,
@@ -4620,7 +4492,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "VtaNJKJKQstorErKlKb1pQ=="
+        "id": "pca_bernoulli_nb_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -4629,7 +4501,7 @@
         "qda_reg_param": 3.903527426816069,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "-SWwQKyMBE6Y6rTn4CoT1A=="
+        "id": "polynomial_qda_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -4641,13 +4513,13 @@
         "lda_tol": 0.00046470950537278404,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "Ldgg_gUP00li1anORgUlrA=="
+        "id": "polynomial_lda_4"
     },
     {
         "pca_keep_variance": 0.9592396295126946,
         "pca_whiten": 1,
         "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 6092.383684235517,
+        "libsvm_svc_C": 1024.383684235517,
         "libsvm_svc_max_iter": -1,
         "libsvm_svc_degree": 5,
         "libsvm_svc_coef0": -0.7419387766636123,
@@ -4656,23 +4528,7 @@
         "libsvm_svc_gamma": 1.4807521533621952,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "EZlCFAcJ3zlbOPBJ7QskcA=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 15.735439123067302,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 2,
-        "libsvm_svc_coef0": 0.25583187816397035,
-        "libsvm_svc_tol": 0.010258593736326854,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 7.141095102962035e-05,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "iuSeF7ajF6G_zFFM1L0sBA=="
+        "id": "pca_libsvm_svc_14"
     },
     {
         "polynomial_include_bias": 1,
@@ -4688,7 +4544,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "QgELbsR-wTE-ursqiHo7dg=="
+        "id": "polynomial_extra_trees_17"
     },
     {
         "pca_keep_variance": 0.7369532109249333,
@@ -4701,14 +4557,14 @@
         "libsvm_svc_gamma": 0.0031267358845301144,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "DlHpEm-DwpxbvFN2zStXbQ=="
+        "id": "pca_libsvm_svc_15"
     },
     {
         "pca_keep_variance": 0.5680687495115316,
         "pca_whiten": 1,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "DxK0DYvffkfJmjzBjyRT5A=="
+        "id": "pca_gaussian_nb_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -4726,7 +4582,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "9WzY5GfQF_qct7OKpqU8Yw=="
+        "id": "polynomial_gradient_boosting_19"
     },
     {
         "polynomial_include_bias": 0,
@@ -4743,23 +4599,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "xMzoY7aSTRHKgC3C1_ZlaA=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 0.44424019429572065,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 3,
-        "libsvm_svc_coef0": 0.6874489284477794,
-        "libsvm_svc_tol": 0.00020014851433078622,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 0.10343363352011614,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "amDwW-EekJn1ERgFEcSERw=="
+        "id": "polynomial_random_forest_20"
     },
     {
         "pca_keep_variance": 0.5111188303049564,
@@ -4774,7 +4614,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "v4f_cpOoCyCzQAGEh4yrxQ=="
+        "id": "pca_extra_trees_12"
     },
     {
         "polynomial_include_bias": 1,
@@ -4790,7 +4630,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "TzuNMgiTMZIUXX2oPSytpg=="
+        "id": "polynomial_extra_trees_18"
     },
     {
         "pca_keep_variance": 0.7365525720077657,
@@ -4798,7 +4638,7 @@
         "qda_reg_param": 3.066135717276588,
         "pre-processor": "pca",
         "model": "qda",
-        "id": "OrgEJzjZj25UcUTb0Iw74w=="
+        "id": "pca_qda_7"
     },
     {
         "pca_keep_variance": 0.5468044472825604,
@@ -4813,14 +4653,14 @@
         "decision_tree_max_depth": 0.8805426622262602,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "4aEIaMcBGD3bj0l37-vb5g=="
+        "id": "pca_decision_tree_21"
     },
     {
         "pca_keep_variance": 0.6444597276600587,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "01Xp_twyXiqFneLp_BzWXg=="
+        "id": "pca_gaussian_nb_10"
     },
     {
         "polynomial_include_bias": 1,
@@ -4841,7 +4681,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "cZYX7uj7Fxe1-epVTOAzzw=="
+        "id": "polynomial_xgradient_boosting_28"
     },
     {
         "pca_keep_variance": 0.5883770050105063,
@@ -4861,7 +4701,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "BBFVw2k5TFBBrMtorU9VxQ=="
+        "id": "pca_xgradient_boosting_16"
     },
     {
         "pca_keep_variance": 0.6026101271305064,
@@ -4881,18 +4721,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "_bXTqHz-zTrmXlgJAJXQ0A=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 3,
-        "lda_shrinkage": "auto",
-        "lda_n_components": 9,
-        "lda_tol": 0.000460894916684267,
-        "pre-processor": "polynomial",
-        "model": "lda",
-        "id": "7q5lFqv8U2yze3T-OwH61A=="
+        "id": "pca_xgradient_boosting_17"
     },
     {
         "pca_keep_variance": 0.7215637135667059,
@@ -4907,7 +4736,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "uVUElyWiELm6OwHW-E_BNg=="
+        "id": "pca_extra_trees_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -4925,7 +4754,7 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "z-hHCt6MlzYVFIiZqG6Slg=="
+        "id": "polynomial_gradient_boosting_20"
     },
     {
         "pca_keep_variance": 0.5403549876202309,
@@ -4938,7 +4767,7 @@
         "libsvm_svc_gamma": 0.13732044517392997,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "u6AQeH9VIRN2NsfD7D5OoQ=="
+        "id": "pca_libsvm_svc_16"
     },
     {
         "polynomial_include_bias": 0,
@@ -4948,7 +4777,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "7TJpyeIuvKIFIsFi7xK9qg=="
+        "id": "polynomial_multinomial_nb_16"
     },
     {
         "pca_keep_variance": 0.6248479466337606,
@@ -4958,7 +4787,7 @@
         "lda_tol": 5.784885903680546e-05,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "lmT2j5NegV5VGtuR243qkA=="
+        "id": "pca_lda_7"
     },
     {
         "pca_keep_variance": 0.6703861298751373,
@@ -4973,18 +4802,7 @@
         "libsvm_svc_gamma": 0.0139935182870207,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "mhWR9U6UfazBJ6HCtSDcHg=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 3,
-        "lda_shrinkage": "auto",
-        "lda_n_components": 180,
-        "lda_tol": 0.0005504844256953827,
-        "pre-processor": "polynomial",
-        "model": "lda",
-        "id": "7SH_aTjsl5G4O-FYQovuew=="
+        "id": "pca_libsvm_svc_17"
     },
     {
         "pca_keep_variance": 0.9241958974921807,
@@ -4994,7 +4812,7 @@
         "lda_tol": 0.03860979243037988,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "5mCh980r6kHXkoLMyt9u4Q=="
+        "id": "pca_lda_8"
     },
     {
         "polynomial_include_bias": 0,
@@ -5004,7 +4822,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "xgG3bed3CCpw7u4OV3rMMA=="
+        "id": "polynomial_multinomial_nb_17"
     },
     {
         "pca_keep_variance": 0.9006465782074309,
@@ -5021,7 +4839,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "YOrQ9_xCJgBmWJZz4sxW6g=="
+        "id": "pca_gradient_boosting_22"
     },
     {
         "pca_keep_variance": 0.74435246113083,
@@ -5038,7 +4856,7 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "ckH9eIlrag2xL0ZN1hr61A=="
+        "id": "pca_gradient_boosting_23"
     },
     {
         "polynomial_include_bias": 1,
@@ -5059,23 +4877,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "-SpGPdznXZnCXxi_UEUKDA=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 3,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 1225.1248637215194,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 3,
-        "libsvm_svc_coef0": 0.23351069846264783,
-        "libsvm_svc_tol": 0.0007372664202146953,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 0.0030362166567083214,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "cyMwtpNoV8_RPIOtMA3Xyg=="
+        "id": "polynomial_xgradient_boosting_29"
     },
     {
         "pca_keep_variance": 0.80783535733217,
@@ -5090,7 +4892,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "PmPiOv-3H5WB7HJwNYe5IA=="
+        "id": "pca_extra_trees_14"
     },
     {
         "polynomial_include_bias": 1,
@@ -5106,7 +4908,7 @@
         "decision_tree_max_depth": 1.0370879605545922,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "trFXiYFpyEhB1fBOmbPSnQ=="
+        "id": "polynomial_decision_tree_19"
     },
     {
         "polynomial_include_bias": 0,
@@ -5116,7 +4918,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "2bpdbDVN0tmDFpC1i4jyIw=="
+        "id": "polynomial_bernoulli_nb_4"
     },
     {
         "pca_keep_variance": 0.9475047749154424,
@@ -5126,7 +4928,7 @@
         "lda_tol": 1.6374979740003955e-05,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "Kc0rtrG4y1RkZ8uHwWxXBw=="
+        "id": "pca_lda_9"
     },
     {
         "pca_keep_variance": 0.6013095218604725,
@@ -5136,7 +4938,7 @@
         "k_nearest_neighbors_n_neighbors": 3,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "sbxE4Y926xTlwTch0gRBDQ=="
+        "id": "pca_k_nearest_neighbors_15"
     },
     {
         "polynomial_include_bias": 0,
@@ -5154,7 +4956,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "RpXqBnfvU8SdN_7L-G0Iyg=="
+        "id": "polynomial_gradient_boosting_21"
     },
     {
         "polynomial_include_bias": 0,
@@ -5171,7 +4973,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "xAocan623p5pa-eWikXdVA=="
+        "id": "polynomial_random_forest_21"
     },
     {
         "pca_keep_variance": 0.97922574944746,
@@ -5191,7 +4993,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "YxkkvfeyGsaR_VC_aCp3CA=="
+        "id": "pca_xgradient_boosting_18"
     },
     {
         "pca_keep_variance": 0.6408089743171304,
@@ -5201,7 +5003,7 @@
         "lda_tol": 7.851804026346739e-05,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "jKFQUEvZ60c2KSTnBMUAbQ=="
+        "id": "pca_lda_10"
     },
     {
         "pca_keep_variance": 0.7349161485573493,
@@ -5216,7 +5018,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "I4Yht_UyX1uWqu-Yt297Rg=="
+        "id": "pca_extra_trees_15"
     },
     {
         "pca_keep_variance": 0.8537561326331082,
@@ -5227,7 +5029,7 @@
         "lda_tol": 6.312185445134587e-05,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "nmB_Hh5vp145vJuWxtWydg=="
+        "id": "pca_lda_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -5237,7 +5039,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "J2pw9IsF18mZ4X8kgPywYw=="
+        "id": "polynomial_multinomial_nb_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -5255,21 +5057,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "KcxxE4oRsadEvXVZO8Clgw=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "rbf",
-        "libsvm_svc_C": 28.316710930681563,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_tol": 0.021727108121237543,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 0.008944057270878403,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "KCWYVDuQP6lQ7djsFkru2A=="
+        "id": "polynomial_gradient_boosting_22"
     },
     {
         "pca_keep_variance": 0.6968689346541195,
@@ -5284,7 +5072,7 @@
         "decision_tree_max_depth": 1.5611800152730422,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "jS_yFkIeHhsD18j06iE1mg=="
+        "id": "pca_decision_tree_22"
     },
     {
         "polynomial_include_bias": 1,
@@ -5294,7 +5082,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "2S5hSwpGj19YPBOpAlIZYw=="
+        "id": "polynomial_multinomial_nb_19"
     },
     {
         "pca_keep_variance": 0.6483474124428642,
@@ -5311,7 +5099,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "o-mOQUB0AqnSSRkZwXWWPA=="
+        "id": "pca_gradient_boosting_24"
     },
     {
         "polynomial_include_bias": 1,
@@ -5326,7 +5114,7 @@
         "libsvm_svc_gamma": 0.2787883568306719,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "3B3xp7MuGwHK-f2Xi7wxyg=="
+        "id": "polynomial_libsvm_svc_8"
     },
     {
         "pca_keep_variance": 0.6342135100812776,
@@ -5335,7 +5123,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "CCPJ5LYfypwrqzBJDOfjfg=="
+        "id": "pca_bernoulli_nb_8"
     },
     {
         "pca_keep_variance": 0.735754872926253,
@@ -5345,7 +5133,7 @@
         "k_nearest_neighbors_n_neighbors": 2,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "RsXnMNsTDE7mJ5NceD4aVQ=="
+        "id": "pca_k_nearest_neighbors_16"
     },
     {
         "polynomial_include_bias": 1,
@@ -5354,7 +5142,7 @@
         "qda_reg_param": 0.27847863632590064,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "Le2dbfQqV9tnWIf9jfJB_g=="
+        "id": "polynomial_qda_8"
     },
     {
         "pca_keep_variance": 0.8953083878118245,
@@ -5369,7 +5157,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "G2xlbGyqGVU4oxhwUAPazw=="
+        "id": "pca_extra_trees_16"
     },
     {
         "polynomial_include_bias": 0,
@@ -5385,7 +5173,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "AxYE-UAVcrQYOzh2HaVrGA=="
+        "id": "polynomial_extra_trees_19"
     },
     {
         "polynomial_include_bias": 0,
@@ -5406,7 +5194,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "-D3JjBWn3qv4KFCpNxZEbw=="
+        "id": "polynomial_xgradient_boosting_30"
     },
     {
         "pca_keep_variance": 0.6684191694398509,
@@ -5416,7 +5204,7 @@
         "lda_tol": 0.0639054287684189,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "dfhJFbwVajLO6mQhIhYP7g=="
+        "id": "pca_lda_12"
     },
     {
         "polynomial_include_bias": 0,
@@ -5437,7 +5225,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "e6_pfI37237HsifOV0CWgA=="
+        "id": "polynomial_xgradient_boosting_31"
     },
     {
         "pca_keep_variance": 0.7967389346736387,
@@ -5452,7 +5240,7 @@
         "decision_tree_max_depth": 0.6663097319035114,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "dRClEUD6P1ZCrCEn7W8WJw=="
+        "id": "pca_decision_tree_23"
     },
     {
         "polynomial_include_bias": 1,
@@ -5470,7 +5258,7 @@
         "gradient_boosting_max_depth": 1,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "f0CkWChsHpEysLzOTqGs3w=="
+        "id": "polynomial_gradient_boosting_23"
     },
     {
         "polynomial_include_bias": 0,
@@ -5491,7 +5279,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "DVj3QA6Z1j-l97k_Bbcw3w=="
+        "id": "polynomial_xgradient_boosting_32"
     },
     {
         "polynomial_include_bias": 0,
@@ -5502,7 +5290,7 @@
         "k_nearest_neighbors_n_neighbors": 7,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "Xgrko-oXpbcmsDrRNvsJ-Q=="
+        "id": "polynomial_k_nearest_neighbors_7"
     },
     {
         "pca_keep_variance": 0.9758366749308156,
@@ -5519,7 +5307,7 @@
         "gradient_boosting_max_depth": 4,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "1ODymhan9m6gyGFSJKIXfA=="
+        "id": "pca_gradient_boosting_25"
     },
     {
         "pca_keep_variance": 0.7350241320618119,
@@ -5532,7 +5320,7 @@
         "libsvm_svc_gamma": 0.0002254735682965619,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "JLg8CsmeOQ3MC7XRfxWZAw=="
+        "id": "pca_libsvm_svc_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -5548,7 +5336,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "E1tBVKq5ncj5cdfeuQr5Vg=="
+        "id": "polynomial_extra_trees_20"
     },
     {
         "polynomial_include_bias": 0,
@@ -5569,7 +5357,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "OwkxrsOEJ0gvBYJzUWFIVA=="
+        "id": "polynomial_xgradient_boosting_33"
     },
     {
         "pca_keep_variance": 0.9525892229381239,
@@ -5589,7 +5377,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "XmQZDJVaNHPCvKSj3ES2CA=="
+        "id": "pca_xgradient_boosting_19"
     },
     {
         "polynomial_include_bias": 1,
@@ -5599,23 +5387,7 @@
         "multinomial_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "LT6M96EHg31_unAAmHPv7w=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 29941.082204758597,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 5,
-        "libsvm_svc_coef0": 0.4645211352018528,
-        "libsvm_svc_tol": 0.0008518018546732616,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 3.339018361402009,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "gNnaOExZ9IIa9drILpqhug=="
+        "id": "polynomial_multinomial_nb_20"
     },
     {
         "pca_keep_variance": 0.581788442445466,
@@ -5631,14 +5403,14 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "r4gR-oJxI1cOsYRygJwFKg=="
+        "id": "pca_random_forest_22"
     },
     {
         "pca_keep_variance": 0.7229756287297469,
         "pca_whiten": 1,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "qNQJt4LvvmPUiuutXH5uLQ=="
+        "id": "pca_gaussian_nb_11"
     },
     {
         "polynomial_include_bias": 1,
@@ -5656,7 +5428,7 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "wmPDSiQ-34KQyADo0UeGDw=="
+        "id": "polynomial_gradient_boosting_24"
     },
     {
         "pca_keep_variance": 0.7473870212247882,
@@ -5676,7 +5448,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "PqDq4l8O3_ddl_6tu_bbTw=="
+        "id": "pca_xgradient_boosting_20"
     },
     {
         "pca_keep_variance": 0.9399568692337432,
@@ -5696,18 +5468,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "8LtBHGU3i1v83BAagDiLgw=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "lda_shrinkage": "auto",
-        "lda_n_components": 20,
-        "lda_tol": 0.007151085786045056,
-        "pre-processor": "polynomial",
-        "model": "lda",
-        "id": "W-0zQfViUSL9-PLizisMng=="
+        "id": "pca_xgradient_boosting_21"
     },
     {
         "polynomial_include_bias": 0,
@@ -5723,7 +5484,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "tHIa6GzhLdCl3tvq_gRWaw=="
+        "id": "polynomial_extra_trees_21"
     },
     {
         "pca_keep_variance": 0.9025815869961747,
@@ -5733,7 +5494,7 @@
         "k_nearest_neighbors_n_neighbors": 9,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "S9JdD0i-CLaHJyvA1vXsTg=="
+        "id": "pca_k_nearest_neighbors_17"
     },
     {
         "pca_keep_variance": 0.6788714739434525,
@@ -5753,7 +5514,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "gd5YPDH9zZInfnR-WUyDMQ=="
+        "id": "pca_xgradient_boosting_22"
     },
     {
         "polynomial_include_bias": 0,
@@ -5771,7 +5532,7 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "BAs7ee9u_nMwXx_JUCGMQg=="
+        "id": "polynomial_gradient_boosting_25"
     },
     {
         "polynomial_include_bias": 1,
@@ -5789,7 +5550,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "NfBPwcp2Mk73MWEVNR3oIQ=="
+        "id": "polynomial_gradient_boosting_26"
     },
     {
         "polynomial_include_bias": 1,
@@ -5805,7 +5566,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "dCL3Q2IBlAKX4OacWQ9G2A=="
+        "id": "polynomial_extra_trees_22"
     },
     {
         "pca_keep_variance": 0.7491418586515851,
@@ -5821,7 +5582,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "NELPdFFzo7TcwSE8PpttfA=="
+        "id": "pca_random_forest_23"
     },
     {
         "polynomial_include_bias": 0,
@@ -5838,7 +5599,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "iPfrvR1OhD__Q4dnt2CnYg=="
+        "id": "polynomial_random_forest_22"
     },
     {
         "polynomial_include_bias": 1,
@@ -5855,7 +5616,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "AeIEdaJDPZqPE0tjGrWx0g=="
+        "id": "polynomial_random_forest_23"
     },
     {
         "pca_keep_variance": 0.968022384017078,
@@ -5868,7 +5629,7 @@
         "libsvm_svc_gamma": 0.007532286872361008,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "wMPE3jIRUSKPpmgduH4HlQ=="
+        "id": "pca_libsvm_svc_19"
     },
     {
         "pca_keep_variance": 0.9586868918075004,
@@ -5883,7 +5644,7 @@
         "decision_tree_max_depth": 1.028633199880231,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "Enq-t6COUk-M8TJ6tVjYYA=="
+        "id": "pca_decision_tree_24"
     },
     {
         "polynomial_include_bias": 1,
@@ -5901,17 +5662,17 @@
         "gradient_boosting_max_depth": 3,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "9yjKU3p0Cw7pbxkVKtAKZQ=="
+        "id": "polynomial_gradient_boosting_27"
     },
     {
         "pca_keep_variance": 0.9304684457451635,
         "pca_whiten": 1,
         "k_nearest_neighbors_p": 1,
         "k_nearest_neighbors_weights": "distance",
-        "k_nearest_neighbors_n_neighbors": 28,
+        "k_nearest_neighbors_n_neighbors": 12,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "9ByD5yJrPs5nSDoaGo3eaA=="
+        "id": "pca_k_nearest_neighbors_18"
     },
     {
         "polynomial_include_bias": 0,
@@ -5922,7 +5683,7 @@
         "lda_tol": 0.014834034579091557,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "Kiqyx116Aq2yZDbLZ12g0w=="
+        "id": "polynomial_lda_5"
     },
     {
         "polynomial_include_bias": 0,
@@ -5932,7 +5693,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "7kQhCDR4l_3zWN-hujhyOA=="
+        "id": "polynomial_bernoulli_nb_5"
     },
     {
         "polynomial_include_bias": 1,
@@ -5948,7 +5709,7 @@
         "decision_tree_max_depth": 1.958979240614232,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "bWB8Rt_xyxozuX2cgavTAA=="
+        "id": "polynomial_decision_tree_20"
     },
     {
         "polynomial_include_bias": 0,
@@ -5964,7 +5725,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "uGX6dtjnwEDYnptdPGwg7g=="
+        "id": "polynomial_extra_trees_23"
     },
     {
         "pca_keep_variance": 0.7226841034473204,
@@ -5984,7 +5745,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "joQI1eRRKz2uFpu63emEMw=="
+        "id": "pca_xgradient_boosting_23"
     },
     {
         "polynomial_include_bias": 0,
@@ -6005,7 +5766,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "tXlXFoDC9iwIMKuLiC_OWA=="
+        "id": "polynomial_xgradient_boosting_34"
     },
     {
         "polynomial_include_bias": 0,
@@ -6021,7 +5782,7 @@
         "decision_tree_max_depth": 1.5025915917185546,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "Y5-pyd5O7igL7I-t7HYZ3w=="
+        "id": "polynomial_decision_tree_21"
     },
     {
         "pca_keep_variance": 0.7656862832829738,
@@ -6036,7 +5797,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "zAHRzfMdHzULj_oxjeso_g=="
+        "id": "pca_extra_trees_17"
     },
     {
         "pca_keep_variance": 0.9182585172457358,
@@ -6051,7 +5812,7 @@
         "libsvm_svc_gamma": 0.01119366746248108,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "-JFNah_chak5Ea2Bunxzxw=="
+        "id": "pca_libsvm_svc_20"
     },
     {
         "pca_keep_variance": 0.9914898548143875,
@@ -6067,7 +5828,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "mQ728x5L3gDe2ij0U1h_Lg=="
+        "id": "pca_random_forest_24"
     },
     {
         "polynomial_include_bias": 1,
@@ -6088,7 +5849,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "fROJ13LlR_vrHYPLXwc7Qg=="
+        "id": "polynomial_xgradient_boosting_35"
     },
     {
         "polynomial_include_bias": 0,
@@ -6104,7 +5865,7 @@
         "decision_tree_max_depth": 0.3001299130353128,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "wyUaiKoHFsQH1GWCeyfu3A=="
+        "id": "polynomial_decision_tree_22"
     },
     {
         "pca_keep_variance": 0.7283344347380188,
@@ -6119,7 +5880,7 @@
         "decision_tree_max_depth": 0.06451140239001729,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "8Gel1MOPJF4XXDOmoJvcfw=="
+        "id": "pca_decision_tree_25"
     },
     {
         "pca_keep_variance": 0.5833339008141873,
@@ -6134,7 +5895,7 @@
         "decision_tree_max_depth": 1.346636620596566,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "y2LCyVDf_Vonxlg00zStXg=="
+        "id": "pca_decision_tree_26"
     },
     {
         "pca_keep_variance": 0.7474597081932928,
@@ -6154,7 +5915,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "oAmIsoKy6MSjPeDes2xyOg=="
+        "id": "pca_xgradient_boosting_24"
     },
     {
         "pca_keep_variance": 0.65878822935064,
@@ -6168,7 +5929,7 @@
         "libsvm_svc_gamma": 0.0006443554593060136,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "9gYUhYRQeyrmeNdoR2KuCg=="
+        "id": "pca_libsvm_svc_21"
     },
     {
         "pca_keep_variance": 0.9023073341744985,
@@ -6178,7 +5939,7 @@
         "lda_tol": 0.012688582679810968,
         "pre-processor": "pca",
         "model": "lda",
-        "id": "mAANtpW1b_Qq-GpEnianQQ=="
+        "id": "pca_lda_13"
     },
     {
         "polynomial_include_bias": 0,
@@ -6194,7 +5955,7 @@
         "decision_tree_max_depth": 1.07668635158664,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "N9uqw2mp3bSRCQFLvHxSUg=="
+        "id": "polynomial_decision_tree_23"
     },
     {
         "polynomial_include_bias": 1,
@@ -6209,14 +5970,14 @@
         "libsvm_svc_gamma": 0.004008675863307919,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "i5l0YVIppksagbsoYPIgmg=="
+        "id": "polynomial_libsvm_svc_9"
     },
     {
         "pca_keep_variance": 0.9685697233131414,
         "pca_whiten": 1,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "wKXfCJwaZHAHEynlg68uKQ=="
+        "id": "pca_gaussian_nb_12"
     },
     {
         "polynomial_include_bias": 1,
@@ -6237,7 +5998,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "eQCnPgof4Nl-GOYcqQPfHw=="
+        "id": "polynomial_xgradient_boosting_36"
     },
     {
         "pca_keep_variance": 0.7923095261898684,
@@ -6250,7 +6011,7 @@
         "libsvm_svc_gamma": 2.3689899328762976,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "t_03fB_bARe5zCLqMfbfcA=="
+        "id": "pca_libsvm_svc_22"
     },
     {
         "polynomial_include_bias": 0,
@@ -6267,7 +6028,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "PPPyRPSEm0ZO9QII95QLYg=="
+        "id": "polynomial_random_forest_24"
     },
     {
         "polynomial_include_bias": 1,
@@ -6277,7 +6038,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "6yPw8x_b-lNGd0gCs-5phA=="
+        "id": "polynomial_bernoulli_nb_6"
     },
     {
         "polynomial_include_bias": 1,
@@ -6293,7 +6054,7 @@
         "decision_tree_max_depth": 1.2957770991848885,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "3B0oHVfA7gQ8zj7kNaXSVg=="
+        "id": "polynomial_decision_tree_24"
     },
     {
         "polynomial_include_bias": 0,
@@ -6309,7 +6070,7 @@
         "decision_tree_max_depth": 0.08280195815463842,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "LKmyv8VQHOrdIPCB2IAhbg=="
+        "id": "polynomial_decision_tree_25"
     },
     {
         "polynomial_include_bias": 1,
@@ -6319,7 +6080,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "3NjkLsTYx5NPRaW6fdcM7Q=="
+        "id": "polynomial_multinomial_nb_21"
     },
     {
         "polynomial_include_bias": 1,
@@ -6329,7 +6090,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "wbFrhdlmHo5ah5_Pp16bkQ=="
+        "id": "polynomial_multinomial_nb_22"
     },
     {
         "pca_keep_variance": 0.8098127245862718,
@@ -6345,7 +6106,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "FatAGqsAHngXIYLRbO2RlQ=="
+        "id": "pca_random_forest_25"
     },
     {
         "pca_keep_variance": 0.5383234854126514,
@@ -6365,7 +6126,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "lrly-qicBxaC8zfeZm-SPA=="
+        "id": "pca_xgradient_boosting_25"
     },
     {
         "polynomial_include_bias": 1,
@@ -6376,7 +6137,7 @@
         "lda_tol": 1.687100557995621e-05,
         "pre-processor": "polynomial",
         "model": "lda",
-        "id": "ytHTk1H4Ibj8ATQN88cwbQ=="
+        "id": "polynomial_lda_6"
     },
     {
         "polynomial_include_bias": 0,
@@ -6384,10 +6145,10 @@
         "polynomial_degree": 2,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
-        "k_nearest_neighbors_n_neighbors": 49,
+        "k_nearest_neighbors_n_neighbors": 30,
         "pre-processor": "polynomial",
         "model": "k_nearest_neighbors",
-        "id": "F1fCFoqlbrAGCp35KRcBLw=="
+        "id": "polynomial_k_nearest_neighbors_8"
     },
     {
         "pca_keep_variance": 0.876976136349989,
@@ -6402,7 +6163,7 @@
         "decision_tree_max_depth": 0.4702026618872104,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "EuvuwrkzPyIlYfUgC84GXg=="
+        "id": "pca_decision_tree_27"
     },
     {
         "pca_keep_variance": 0.6456086846567269,
@@ -6417,7 +6178,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "DQiYpHJtwRljku0JT3c1Mw=="
+        "id": "pca_extra_trees_18"
     },
     {
         "pca_keep_variance": 0.9266906281334907,
@@ -6437,7 +6198,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "4q4UAuNj0lFqmFwmrhI5WQ=="
+        "id": "pca_xgradient_boosting_26"
     },
     {
         "pca_keep_variance": 0.7313408688791541,
@@ -6454,7 +6215,7 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "sYKHhtT6l7VN_8PBOW4KCQ=="
+        "id": "pca_gradient_boosting_26"
     },
     {
         "pca_keep_variance": 0.6719066674872514,
@@ -6470,7 +6231,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "hNc__LC7p9R-27W00TwTtA=="
+        "id": "pca_random_forest_26"
     },
     {
         "pca_keep_variance": 0.631382498972286,
@@ -6483,7 +6244,7 @@
         "libsvm_svc_gamma": 9.305866151270666e-05,
         "pre-processor": "pca",
         "model": "libsvm_svc",
-        "id": "hEZcXUKE2PCIkLIIEKVRIQ=="
+        "id": "pca_libsvm_svc_23"
     },
     {
         "polynomial_include_bias": 1,
@@ -6499,7 +6260,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "3ebGAm5C9Pl6wWGtx8Efxg=="
+        "id": "polynomial_extra_trees_24"
     },
     {
         "polynomial_include_bias": 0,
@@ -6508,7 +6269,7 @@
         "qda_reg_param": 9.376085882171468,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "5BTvn9fSxurHkZLDsrHLdQ=="
+        "id": "polynomial_qda_9"
     },
     {
         "polynomial_include_bias": 1,
@@ -6518,7 +6279,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "HemfHbKpCYJGU0pSwYlccw=="
+        "id": "polynomial_bernoulli_nb_7"
     },
     {
         "polynomial_include_bias": 0,
@@ -6533,23 +6294,7 @@
         "libsvm_svc_gamma": 0.01193554121934309,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "MUwMAuzpkKW4vzdcK4P0tQ=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 2.5381870215867,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 1,
-        "libsvm_svc_coef0": -0.037928671201573394,
-        "libsvm_svc_tol": 3.333538675619677e-05,
-        "libsvm_svc_shrinking": 1,
-        "libsvm_svc_gamma": 0.022507941838339082,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "cfOLgeUa_lvOVh4KUCDtgg=="
+        "id": "polynomial_libsvm_svc_10"
     },
     {
         "polynomial_include_bias": 0,
@@ -6570,7 +6315,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "sfahjczPYnBlz0RkixWohQ=="
+        "id": "polynomial_xgradient_boosting_37"
     },
     {
         "pca_keep_variance": 0.6091753708642076,
@@ -6586,7 +6331,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "1PTXlI9Hqqn3z7Idcq_NNQ=="
+        "id": "pca_random_forest_27"
     },
     {
         "polynomial_include_bias": 1,
@@ -6596,7 +6341,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "aqU6SHgDoPZjMPfa2BCfYw=="
+        "id": "polynomial_multinomial_nb_23"
     },
     {
         "polynomial_include_bias": 0,
@@ -6612,7 +6357,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "yMerHNsqOmpXQUYc3B1ezw=="
+        "id": "polynomial_extra_trees_25"
     },
     {
         "pca_keep_variance": 0.5988486251692878,
@@ -6627,7 +6372,7 @@
         "decision_tree_max_depth": 1.4888848359909685,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "XKQOKfDd-FV_wHxnBOnCIw=="
+        "id": "pca_decision_tree_28"
     },
     {
         "polynomial_include_bias": 0,
@@ -6648,7 +6393,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "BWFu6b2YGu0nCR8Ar_gWPA=="
+        "id": "polynomial_xgradient_boosting_38"
     },
     {
         "polynomial_include_bias": 1,
@@ -6665,7 +6410,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "gJEBc3_vsY9xeV015R2suQ=="
+        "id": "polynomial_random_forest_25"
     },
     {
         "polynomial_include_bias": 0,
@@ -6674,14 +6419,14 @@
         "qda_reg_param": 4.74212547369131,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "2j0LcbR0jKjYIEy1lPV5_A=="
+        "id": "polynomial_qda_10"
     },
     {
         "pca_keep_variance": 0.8068589878915755,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "36Nk5S6-Zv6Yp5tlTtAriw=="
+        "id": "pca_gaussian_nb_13"
     },
     {
         "polynomial_include_bias": 1,
@@ -6698,7 +6443,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "uDqygnjlps3Y70vcfZLBHg=="
+        "id": "polynomial_random_forest_26"
     },
     {
         "pca_keep_variance": 0.6089420708303278,
@@ -6708,7 +6453,7 @@
         "k_nearest_neighbors_n_neighbors": 1,
         "pre-processor": "pca",
         "model": "k_nearest_neighbors",
-        "id": "dUbs2IbyFJgVA8sWK7_YAA=="
+        "id": "pca_k_nearest_neighbors_19"
     },
     {
         "pca_keep_variance": 0.6633963220838468,
@@ -6724,7 +6469,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "m5NcGm6XEUgxqWiTN8BpQA=="
+        "id": "pca_random_forest_28"
     },
     {
         "pca_keep_variance": 0.6603775839316233,
@@ -6739,7 +6484,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "VAvFojFgqF0MD3WuKPxcQQ=="
+        "id": "pca_extra_trees_19"
     },
     {
         "pca_keep_variance": 0.6458899640892489,
@@ -6754,7 +6499,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "S-lfGciyLws0oZURRYYVMw=="
+        "id": "pca_extra_trees_20"
     },
     {
         "polynomial_include_bias": 0,
@@ -6768,7 +6513,7 @@
         "libsvm_svc_gamma": 6.295533402088324,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "1H1WjTGSXb-zrGR_IWpeFw=="
+        "id": "polynomial_libsvm_svc_11"
     },
     {
         "polynomial_include_bias": 0,
@@ -6777,7 +6522,7 @@
         "qda_reg_param": 8.708888636011036,
         "pre-processor": "polynomial",
         "model": "qda",
-        "id": "pN9TTcOe0OH4cPOX5_iRZA=="
+        "id": "polynomial_qda_11"
     },
     {
         "pca_keep_variance": 0.6866802755303104,
@@ -6792,7 +6537,7 @@
         "decision_tree_max_depth": 1.2381212103308823,
         "pre-processor": "pca",
         "model": "decision_tree",
-        "id": "EBG7MbLW_RTI-DSnsS9U-g=="
+        "id": "pca_decision_tree_29"
     },
     {
         "polynomial_include_bias": 1,
@@ -6808,7 +6553,7 @@
         "decision_tree_max_depth": 1.5559094326507517,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "H6oPfduFt4AALSy3afh7aw=="
+        "id": "polynomial_decision_tree_26"
     },
     {
         "pca_keep_variance": 0.6799204406466106,
@@ -6825,7 +6570,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "ZWG_WhpNarqxAdZUCM-d4Q=="
+        "id": "pca_gradient_boosting_27"
     },
     {
         "polynomial_include_bias": 1,
@@ -6835,7 +6580,7 @@
         "multinomial_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "multinomial_nb",
-        "id": "nQOrDf5HXqE8Ki7K6BXdEg=="
+        "id": "polynomial_multinomial_nb_24"
     },
     {
         "polynomial_include_bias": 0,
@@ -6853,7 +6598,7 @@
         "gradient_boosting_max_depth": 8,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "5QWnBGeWsYg1ixzB5cY1aA=="
+        "id": "polynomial_gradient_boosting_28"
     },
     {
         "pca_keep_variance": 0.692174740537769,
@@ -6869,7 +6614,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "Bk2a5w5Ueb5yERlbPNXezw=="
+        "id": "pca_random_forest_29"
     },
     {
         "pca_keep_variance": 0.9002466531333981,
@@ -6878,7 +6623,7 @@
         "bernoulli_nb_fit_prior": 0,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "1KG6Io3LPBvRAyD2Ax-I9Q=="
+        "id": "pca_bernoulli_nb_9"
     },
     {
         "pca_keep_variance": 0.6201303898967777,
@@ -6893,7 +6638,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "kuwGI8ubXaAtg8T8JKp_mA=="
+        "id": "pca_extra_trees_21"
     },
     {
         "pca_keep_variance": 0.5230712765409791,
@@ -6909,7 +6654,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "AZYCBfNWBcQmYGdFfhV75w=="
+        "id": "pca_random_forest_30"
     },
     {
         "pca_keep_variance": 0.8800767791621817,
@@ -6925,7 +6670,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "pca",
         "model": "random_forest",
-        "id": "A0kq_hEvdO4wgYvwOSX1tw=="
+        "id": "pca_random_forest_31"
     },
     {
         "polynomial_include_bias": 1,
@@ -6942,7 +6687,7 @@
         "random_forest_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "random_forest",
-        "id": "9kFTwLQI7zbTMLcR0cZxMQ=="
+        "id": "polynomial_random_forest_27"
     },
     {
         "polynomial_include_bias": 1,
@@ -6958,7 +6703,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "XdGrjGjz9Km1RSv5yUsRQg=="
+        "id": "polynomial_extra_trees_26"
     },
     {
         "pca_keep_variance": 0.7496857444224388,
@@ -6978,7 +6723,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "39hCYOe-seJzq-Xmjtw6MA=="
+        "id": "pca_xgradient_boosting_27"
     },
     {
         "polynomial_include_bias": 0,
@@ -6999,7 +6744,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "VChrN9gM5BhxOkpGCVyUuA=="
+        "id": "polynomial_xgradient_boosting_39"
     },
     {
         "polynomial_include_bias": 0,
@@ -7013,7 +6758,7 @@
         "libsvm_svc_gamma": 3.083623955881208e-05,
         "pre-processor": "polynomial",
         "model": "libsvm_svc",
-        "id": "k9SMG5OWtq_3jeAvWLV5ow=="
+        "id": "polynomial_libsvm_svc_12"
     },
     {
         "pca_keep_variance": 0.6307671203757346,
@@ -7033,23 +6778,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "Fhm7pmN5sKBSP6bQWaNWqA=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 150.24671065928175,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 1,
-        "libsvm_svc_coef0": -0.15736401963457936,
-        "libsvm_svc_tol": 0.03119130270502328,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 1.2973271350386277,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "V__FQcfndGJJwPwJ8QIVKQ=="
+        "id": "pca_xgradient_boosting_28"
     },
     {
         "polynomial_include_bias": 0,
@@ -7070,7 +6799,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "1q2cSizoTEz6l8efMAvKTQ=="
+        "id": "polynomial_xgradient_boosting_40"
     },
     {
         "pca_keep_variance": 0.6634648237878935,
@@ -7090,32 +6819,14 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "c4vmoVNUMMUoF_f1w_S8DA=="
-    },
-    {
-        "polynomial_include_bias": 1,
-        "polynomial_interaction_only": 1,
-        "polynomial_degree": 3,
-        "gradient_boosting_loss": "deviance",
-        "gradient_boosting_max_leaf_nodes": -1,
-        "gradient_boosting_learning_rate": 0.06795664887753033,
-        "gradient_boosting_min_samples_leaf": 10,
-        "gradient_boosting_n_estimators": 96,
-        "gradient_boosting_subsample": 0.5738982202867875,
-        "gradient_boosting_min_weight_fraction_leaf": 0.0,
-        "gradient_boosting_max_features": 2.4371631645630227,
-        "gradient_boosting_min_samples_split": 7,
-        "gradient_boosting_max_depth": 10,
-        "pre-processor": "polynomial",
-        "model": "gradient_boosting",
-        "id": "3CFxiJixzMTB5R-0-daaTw=="
+        "id": "pca_xgradient_boosting_29"
     },
     {
         "pca_keep_variance": 0.6883883819516429,
         "pca_whiten": 0,
         "pre-processor": "pca",
         "model": "gaussian_nb",
-        "id": "RYxceHTWOvv14xuaMy3lLg=="
+        "id": "pca_gaussian_nb_14"
     },
     {
         "polynomial_include_bias": 0,
@@ -7131,7 +6842,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "TZGc_ZXA82F_Ojd6O89YfQ=="
+        "id": "polynomial_extra_trees_27"
     },
     {
         "pca_keep_variance": 0.9511502513070391,
@@ -7151,7 +6862,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "QGcuI1Q0bbydQAejLhXp5Q=="
+        "id": "pca_xgradient_boosting_30"
     },
     {
         "pca_keep_variance": 0.9860913531210458,
@@ -7166,7 +6877,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "SZe0UnYGVCu5MpOQHcwJVw=="
+        "id": "pca_extra_trees_22"
     },
     {
         "polynomial_include_bias": 0,
@@ -7182,7 +6893,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "NnuHAJjUHZBLpSoI2vdA_A=="
+        "id": "polynomial_extra_trees_28"
     },
     {
         "polynomial_include_bias": 0,
@@ -7198,7 +6909,7 @@
         "decision_tree_max_depth": 0.9632338559615272,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "BzGNlzLjiBoTs_q4NjAH7w=="
+        "id": "polynomial_decision_tree_27"
     },
     {
         "polynomial_include_bias": 1,
@@ -7214,7 +6925,7 @@
         "decision_tree_max_depth": 0.3165835212825203,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "OnC36aWTjTgadGu_EgqMaw=="
+        "id": "polynomial_decision_tree_28"
     },
     {
         "pca_keep_variance": 0.8989285433387361,
@@ -7231,35 +6942,20 @@
         "gradient_boosting_max_depth": 9,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "w06Yxop6begg6itVnbW5Ow=="
+        "id": "pca_gradient_boosting_28"
     },
     {
+        "polynomial_include_bias": 1,
+        "polynomial_interaction_only": 0,
+        "polynomial_degree": 3,
         "pca_keep_variance": 0.8730312027192281,
         "pca_whiten": 0,
         "k_nearest_neighbors_p": 2,
         "k_nearest_neighbors_weights": "uniform",
         "k_nearest_neighbors_n_neighbors": 14,
-        "pre-processor": "pca",
-        "model": "k_nearest_neighbors",
-        "id": "h94Wi6RhGVhECSAuqHJ8JQ=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 3,
-        "gradient_boosting_loss": "deviance",
-        "gradient_boosting_max_leaf_nodes": -1,
-        "gradient_boosting_learning_rate": 0.016005063150265227,
-        "gradient_boosting_min_samples_leaf": 5,
-        "gradient_boosting_n_estimators": 246,
-        "gradient_boosting_subsample": 0.3768333110529157,
-        "gradient_boosting_min_weight_fraction_leaf": 0.0,
-        "gradient_boosting_max_features": 4.6944583330608305,
-        "gradient_boosting_min_samples_split": 18,
-        "gradient_boosting_max_depth": 5,
         "pre-processor": "polynomial",
-        "model": "gradient_boosting",
-        "id": "kNC9yLQSsksHdkAGWCk2ig=="
+        "model": "k_nearest_neighbors",
+        "id": "polynomial_k_nearest_neighbors_9"
     },
     {
         "polynomial_include_bias": 0,
@@ -7275,7 +6971,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "KkGzx6yDVCxEnml2qUPMvw=="
+        "id": "polynomial_extra_trees_29"
     },
     {
         "polynomial_include_bias": 1,
@@ -7293,7 +6989,7 @@
         "gradient_boosting_max_depth": 2,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "X5mJ1aMaXl4eSsMwn4oAOw=="
+        "id": "polynomial_gradient_boosting_29"
     },
     {
         "polynomial_include_bias": 1,
@@ -7303,7 +6999,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "polynomial",
         "model": "bernoulli_nb",
-        "id": "1cZETr_KGt6m4p7PJDAGUg=="
+        "id": "polynomial_bernoulli_nb_8"
     },
     {
         "polynomial_include_bias": 0,
@@ -7324,23 +7020,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "DvQe-B5GhDCt5kj-LdQh2g=="
-    },
-    {
-        "polynomial_include_bias": 0,
-        "polynomial_interaction_only": 0,
-        "polynomial_degree": 2,
-        "libsvm_svc_kernel": "poly",
-        "libsvm_svc_C": 178.68426300735126,
-        "libsvm_svc_max_iter": -1,
-        "libsvm_svc_degree": 2,
-        "libsvm_svc_coef0": 0.0522748527860577,
-        "libsvm_svc_tol": 0.010430408545624794,
-        "libsvm_svc_shrinking": 0,
-        "libsvm_svc_gamma": 0.03596345809843213,
-        "pre-processor": "polynomial",
-        "model": "libsvm_svc",
-        "id": "7WOSTkVyLCPDeXob-SmEmA=="
+        "id": "polynomial_xgradient_boosting_41"
     },
     {
         "pca_keep_variance": 0.6781031828929113,
@@ -7360,7 +7040,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "pca",
         "model": "xgradient_boosting",
-        "id": "j5axXvJxJ6_d3umzTcP5Ww=="
+        "id": "pca_xgradient_boosting_31"
     },
     {
         "pca_keep_variance": 0.6963108753326698,
@@ -7377,7 +7057,7 @@
         "gradient_boosting_max_depth": 5,
         "pre-processor": "pca",
         "model": "gradient_boosting",
-        "id": "XCgCI2SKcPZHdBjXdheKkg=="
+        "id": "pca_gradient_boosting_29"
     },
     {
         "polynomial_include_bias": 0,
@@ -7398,7 +7078,7 @@
         "xgradient_boosting_gamma": 0,
         "pre-processor": "polynomial",
         "model": "xgradient_boosting",
-        "id": "8RiiL3kLGt9h539cpE3xVw=="
+        "id": "polynomial_xgradient_boosting_42"
     },
     {
         "polynomial_include_bias": 0,
@@ -7416,7 +7096,7 @@
         "gradient_boosting_max_depth": 6,
         "pre-processor": "polynomial",
         "model": "gradient_boosting",
-        "id": "4P1eE-gps2bGg3wc25ygcA=="
+        "id": "polynomial_gradient_boosting_30"
     },
     {
         "polynomial_include_bias": 0,
@@ -7432,7 +7112,7 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "polynomial",
         "model": "extra_trees",
-        "id": "kLn31Yu5qWOVDPjYpLGVUQ=="
+        "id": "polynomial_extra_trees_30"
     },
     {
         "pca_keep_variance": 0.5619325520052163,
@@ -7441,7 +7121,7 @@
         "bernoulli_nb_fit_prior": 1,
         "pre-processor": "pca",
         "model": "bernoulli_nb",
-        "id": "7nduym1Eb8RECVgglCHPTg=="
+        "id": "pca_bernoulli_nb_10"
     },
     {
         "polynomial_include_bias": 1,
@@ -7457,7 +7137,7 @@
         "decision_tree_max_depth": 0.504764789136245,
         "pre-processor": "polynomial",
         "model": "decision_tree",
-        "id": "xQYupSMIZsFG1O7fjvYgXw=="
+        "id": "polynomial_decision_tree_29"
     },
     {
         "pca_keep_variance": 0.7696251571615642,
@@ -7472,6 +7152,24 @@
         "extra_trees_max_depth": -1,
         "pre-processor": "pca",
         "model": "extra_trees",
-        "id": "tvyWFrrKrE7w3UXiouDbWQ=="
+        "id": "pca_extra_trees_23"
+    },
+    {
+        "polynomial_include_bias": 1,
+        "polynomial_interaction_only": 0,
+        "polynomial_degree": 2,
+        "gradient_boosting_loss": "deviance",
+        "gradient_boosting_max_leaf_nodes": -1,
+        "gradient_boosting_learning_rate": 0.01796133774458315,
+        "gradient_boosting_min_samples_leaf": 5,
+        "gradient_boosting_n_estimators": 123,
+        "gradient_boosting_subsample": 0.7683256559140915,
+        "gradient_boosting_min_weight_fraction_leaf": 0.0,
+        "gradient_boosting_max_features": 1.8712190551087395,
+        "gradient_boosting_min_samples_split": 20,
+        "gradient_boosting_max_depth": 7,
+        "pre-processor": "polynomial",
+        "model": "gradient_boosting",
+        "id": "polynomial_gradient_boosting_31"
     }
 ]

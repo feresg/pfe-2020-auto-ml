@@ -21,8 +21,8 @@ class PipelineParser:
         :pipeline: python dictionnary reporesentation of the pipeline
         '''
         self.pipeline = pipeline
-        self.model_name = pipeline['model']
-        self.preprocessor_name = pipeline['pre-processor']
+        self.model_name = pipeline.get('model')
+        self.preprocessor_name = pipeline.get('pre-processor')
         self.model = self._get_model()
         self.preprocessor = self._get_preprocessor()
         self.model_hyperparams = self._get_model_hyperparams()
@@ -47,6 +47,8 @@ class PipelineParser:
         return options[self.model_name]
 
     def _get_preprocessor(self):
+        if not self.preprocessor_name:
+            return None
         options = dict(
             pca=PCA,
             polynomial=PolynomialFeatures
@@ -71,6 +73,8 @@ class PipelineParser:
         return options[self.model_name](self.pipeline)
 
     def _get_preprocessor_hyperparams(self):
+        if not self.preprocessor_name:
+            return None
         options = dict(
             pca=preprocessor_parsers.parse_pca_hyperparams,
             polynomial=preprocessor_parsers.parse_polynomial_hyperparams
@@ -81,6 +85,8 @@ class PipelineParser:
         '''
         generates a scikit-learn pipeline from the pipeline data model
         '''
+        if not self.preprocessor:
+            return self.model(**self.model_hyperparams)
         return make_pipeline(
             self.preprocessor(**self.preprocessor_hyperparams),
             self.model(**self.model_hyperparams)

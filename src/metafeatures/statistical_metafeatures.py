@@ -1,14 +1,15 @@
 from utils import get_stats, get_stats_names, get_numeric_features
 from constants import Task
+from metafeatures import BaseMetafeaturesComputer
 
 
-class ProbabilisticMetafeaturesComputer:
+class StatisticalMetafeaturesComputer(BaseMetafeaturesComputer):
     '''
-    Calculates probabilistic metafeatures and returns them as python dictionnary
+    Calculates statistical/probabilistic metafeatures and returns them as python dictionnary
     '''
 
     def __init__(self):
-        pass
+        super().__init__(self)
 
     @staticmethod
     def compute(X, y, task):
@@ -67,3 +68,16 @@ def get_numeric_features_covariances(numeric_features, target):
     covariances = [feature[1].cov(target)
                    for feature in numeric_features.iteritems()]
     return zip(get_stats_names('cov', 'numeric_feautures'), get_stats(covariances))
+
+
+def get_numeric_features_skews(numeric_features):
+    skews = [feature[1].skew() for feature in numeric_features.iteritems()]
+    return zip(get_stats_names('skew', 'numeric_features'), get_stats(skews))
+
+
+def get_numeric_features_kurtosis(numeric_features):
+    kurtosis = [feature[1].kurtosis()
+                for feature in numeric_features.iteritems()]
+    return zip(get_stats_names('kurtosis', 'numeric_features'), get_stats(kurtosis))
+
+# TODO: add quartile1 and quartile3 stats

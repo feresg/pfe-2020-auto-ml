@@ -8,4 +8,7 @@ class Task(Enum):
 
 
 class Heuristic(Enum):
-    PROBABILISTIC = 'probabilistic'
+    STATISTICAL = 'statistical'
+    INFO_THEORETICAL = 'info_theoretical'
+    DESCRIPTIVE = 'descriptive'
+    LANDMARKING = 'landmarking'
