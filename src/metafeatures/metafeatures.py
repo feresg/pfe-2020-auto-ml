@@ -4,36 +4,36 @@ from statistical_metafeatures import StatisticalMetafeaturesComputer
 from info_theoretical_metafeatures import InfoTheoreticalMetafeatures
 from landmarking_metafeatures import LandmarkingMetafeatures
 from descriptive_metafeatures import DescriptiveMetafeatures
+from correlation_metafeatures import CorrelationMetafeatures
 from constants import Task, Heuristic
 from utils import timeit
+
 
 mf_heuristics = {
     Heuristic.STATISTICAL: StatisticalMetafeaturesComputer,
     Heuristic.INFO_THEORETICAL: InfoTheoreticalMetafeatures,
     Heuristic.LANDMARKING: LandmarkingMetafeatures,
-    Heuristic.DESCRIPTIVE: DescriptiveMetafeatures
+    Heuristic.DESCRIPTIVE: DescriptiveMetafeatures,
+    Heuristic.CORRELATION: CorrelationMetafeatures
 }
-
-
-class BaseMetafeaturesComputer:
-    def __init__(self):
-        pass
-
-    @staticmethod
-    def compute(X, y, task):
-        pass
 
 
 class Metafeatures:
 
-    def __init__(self, df, target, heuristics=None, task=None):
-        # TODO: assert that df is of type Pandas dataframe, that target is a column in df
-        self.y = df[target]
-        self.X = df.drop(labels=target, axis=1)
+    def __init__(self, X, y, heuristics=None, task=None):
+        self.X = X
+        self.y = y
+
         # TODO: check that heuristics and task values set by user are valid
         self.heuristics = heuristics if heuristics else [
-            Heuristic.DESCRIPTIVE, Heuristic.STATISTICAL, Heuristic.INFO_THEORETICAL, Heuristic.LANDMARKING]
-        self.task = Task(task) if task is not None else self._get_task()
+            Heuristic.DESCRIPTIVE,
+            Heuristic.STATISTICAL,
+            # TODO: check why info theoretical metafeatures return too many null values
+            Heuristic.INFO_THEORETICAL,
+            Heuristic.LANDMARKING,
+            Heuristic.CORRELATION
+        ]
+        self.task = Task(task) if task else self._get_task()
 
     @timeit
     def compute(self):
