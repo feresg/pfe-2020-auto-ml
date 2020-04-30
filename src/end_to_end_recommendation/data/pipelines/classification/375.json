@@ -1,0 +1,116 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "standardscaler",
+                                "params": {
+                                    "copy": true,
+                                    "with_mean": true,
+                                    "with_std": true
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "featureagglomeration",
+                                        "params": {
+                                            "affinity": "euclidean",
+                                            "compute_full_tree": "auto",
+                                            "connectivity": null,
+                                            "distance_threshold": null,
+                                            "linkage": "ward",
+                                            "memory": null,
+                                            "n_clusters": 5,
+                                            "pooling_func": {
+                                                "__wrapped__": {},
+                                                "_implementation": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "polynomialfeatures",
+                                        "params": {
+                                            "degree": 2,
+                                            "include_bias": false,
+                                            "interaction_only": true,
+                                            "order": "C"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "logisticregression",
+            "params": {
+                "C": 1.0,
+                "class_weight": null,
+                "dual": false,
+                "fit_intercept": true,
+                "intercept_scaling": 1,
+                "l1_ratio": null,
+                "max_iter": 1000,
+                "multi_class": "auto",
+                "n_jobs": null,
+                "penalty": "l2",
+                "random_state": null,
+                "solver": "lbfgs",
+                "tol": 0.009150080961389308,
+                "verbose": 0,
+                "warm_start": true
+            }
+        }
+    ]
+}

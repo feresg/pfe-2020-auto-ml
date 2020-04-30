@@ -1,0 +1,89 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "standardscaler",
+                                        "params": {
+                                            "copy": true,
+                                            "with_mean": true,
+                                            "with_std": true
+                                        }
+                                    },
+                                    {
+                                        "name": "pipeline",
+                                        "steps": [
+                                            {
+                                                "name": "robustscaler",
+                                                "params": {
+                                                    "copy": true,
+                                                    "quantile_range": [
+                                                        25.0,
+                                                        75.0
+                                                    ],
+                                                    "with_centering": true,
+                                                    "with_scaling": true
+                                                }
+                                            },
+                                            {
+                                                "name": "variancethreshold",
+                                                "params": {
+                                                    "threshold": 0.19111742640530505
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                }
+            ],
+            "remainder": "passthrough"
+        },
+        {
+            "name": "extratreesregressor",
+            "params": {
+                "bootstrap": true,
+                "ccp_alpha": 0.0,
+                "criterion": "friedman_mse",
+                "max_depth": null,
+                "max_features": 0.12403510163054299,
+                "max_leaf_nodes": null,
+                "max_samples": null,
+                "min_impurity_decrease": 0.0,
+                "min_impurity_split": null,
+                "min_samples_leaf": 20,
+                "min_samples_split": 13,
+                "min_weight_fraction_leaf": 0.0,
+                "n_estimators": 100,
+                "n_jobs": null,
+                "oob_score": false,
+                "random_state": null,
+                "verbose": 0,
+                "warm_start": true
+            }
+        }
+    ]
+}

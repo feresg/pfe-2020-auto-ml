@@ -1,0 +1,82 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "polynomialfeatures",
+                                        "params": {
+                                            "degree": 2,
+                                            "include_bias": false,
+                                            "interaction_only": false,
+                                            "order": "C"
+                                        }
+                                    },
+                                    {
+                                        "name": "pipeline",
+                                        "steps": [
+                                            {
+                                                "name": "standardscaler",
+                                                "params": {
+                                                    "copy": true,
+                                                    "with_mean": true,
+                                                    "with_std": true
+                                                }
+                                            },
+                                            {
+                                                "name": "rbfsampler",
+                                                "params": {
+                                                    "gamma": 0.00119781428732699,
+                                                    "n_components": 3366,
+                                                    "random_state": null
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                }
+            ],
+            "remainder": "passthrough"
+        },
+        {
+            "name": "ardregression",
+            "params": {
+                "alpha_1": 0.0003433527532917574,
+                "alpha_2": 5.871074035892727e-08,
+                "compute_score": false,
+                "copy_X": true,
+                "fit_intercept": true,
+                "lambda_1": 1.0211387396034765e-09,
+                "lambda_2": 8.154032321105113e-06,
+                "n_iter": 300,
+                "normalize": false,
+                "threshold_lambda": 8837.252872511277,
+                "tol": 0.060836541839904064,
+                "verbose": false
+            }
+        }
+    ]
+}

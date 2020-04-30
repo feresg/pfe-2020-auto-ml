@@ -1,0 +1,91 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "minmaxscaler",
+                                "params": {
+                                    "copy": true,
+                                    "feature_range": [
+                                        0,
+                                        1
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "rbfsampler",
+                                "params": {
+                                    "gamma": 0.00010328596336618825,
+                                    "n_components": 89,
+                                    "random_state": null
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "ordinalencoder",
+                                "params": {
+                                    "categories": "auto"
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "decisiontreeregressor",
+            "params": {
+                "ccp_alpha": 0.0,
+                "criterion": "mse",
+                "max_depth": 1.203036976842764,
+                "max_features": null,
+                "max_leaf_nodes": null,
+                "min_impurity_decrease": 0.0,
+                "min_impurity_split": null,
+                "min_samples_leaf": 15,
+                "min_samples_split": 15,
+                "min_weight_fraction_leaf": 0.0,
+                "presort": "deprecated",
+                "random_state": null,
+                "splitter": "best"
+            }
+        }
+    ]
+}

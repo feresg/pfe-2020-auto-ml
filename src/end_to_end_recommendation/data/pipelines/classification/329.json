@@ -1,0 +1,122 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "minmaxscaler",
+                                        "params": {
+                                            "copy": true,
+                                            "feature_range": [
+                                                0,
+                                                1
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "pipeline",
+                                        "steps": [
+                                            {
+                                                "name": "standardscaler",
+                                                "params": {
+                                                    "copy": true,
+                                                    "with_mean": true,
+                                                    "with_std": true
+                                                }
+                                            },
+                                            {
+                                                "name": "rbfsampler",
+                                                "params": {
+                                                    "gamma": 0.0041431714250943505,
+                                                    "n_components": 3735,
+                                                    "random_state": null
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "xgbclassifier",
+            "params": {
+                "base_score": 0.5,
+                "booster": "gbtree",
+                "colsample_bylevel": 1,
+                "colsample_bynode": 1,
+                "colsample_bytree": 1,
+                "gamma": 0,
+                "learning_rate": 0.06962705021754731,
+                "max_delta_step": 0,
+                "max_depth": 1,
+                "min_child_weight": 2,
+                "missing": null,
+                "n_estimators": 278,
+                "n_jobs": 1,
+                "nthread": null,
+                "objective": "binary:logistic",
+                "random_state": 0,
+                "reg_alpha": 0,
+                "reg_lambda": 1,
+                "scale_pos_weight": 1,
+                "seed": null,
+                "silent": null,
+                "subsample": 0.49615389889865624,
+                "verbosity": 1
+            }
+        }
+    ]
+}

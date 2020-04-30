@@ -1,0 +1,72 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "simpleimputer",
+                        "params": {
+                            "add_indicator": false,
+                            "copy": true,
+                            "fill_value": null,
+                            "missing_values": null,
+                            "strategy": "mean",
+                            "verbose": 0
+                        }
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            },
+                            {
+                                "name": "truncatedsvd",
+                                "params": {
+                                    "algorithm": "randomized",
+                                    "n_components": 22,
+                                    "n_iter": 5,
+                                    "random_state": null,
+                                    "tol": 0.0
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "quadraticdiscriminantanalysis",
+            "params": {
+                "priors": null,
+                "reg_param": 0.4461894838630498,
+                "store_covariance": false,
+                "tol": 0.00016794450528067462
+            }
+        }
+    ]
+}

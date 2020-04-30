@@ -1,0 +1,116 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "pipeline-1",
+                                        "steps": [
+                                            {
+                                                "name": "standardscaler",
+                                                "params": {
+                                                    "copy": true,
+                                                    "with_mean": true,
+                                                    "with_std": true
+                                                }
+                                            },
+                                            {
+                                                "name": "polynomialfeatures",
+                                                "params": {
+                                                    "degree": 3,
+                                                    "include_bias": true,
+                                                    "interaction_only": true,
+                                                    "order": "C"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "pipeline-2",
+                                        "steps": [
+                                            {
+                                                "name": "normalizer",
+                                                "params": {
+                                                    "copy": true,
+                                                    "norm": "l2"
+                                                }
+                                            },
+                                            {
+                                                "name": "truncatedsvd",
+                                                "params": {
+                                                    "algorithm": "randomized",
+                                                    "n_components": 3,
+                                                    "n_iter": 5,
+                                                    "random_state": null,
+                                                    "tol": 0.0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "quadraticdiscriminantanalysis",
+            "params": {
+                "priors": null,
+                "reg_param": 0.6805799569769939,
+                "store_covariance": false,
+                "tol": 0.0716193242595952
+            }
+        }
+    ]
+}

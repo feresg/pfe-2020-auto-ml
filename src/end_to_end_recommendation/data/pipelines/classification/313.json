@@ -1,0 +1,69 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "ordinalencoder",
+                                "params": {
+                                    "categories": "auto"
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                },
+                {
+                    "transformer": {
+                        "name": "simpleimputer",
+                        "params": {
+                            "add_indicator": false,
+                            "copy": true,
+                            "fill_value": null,
+                            "missing_values": null,
+                            "strategy": "mean",
+                            "verbose": 0
+                        }
+                    },
+                    "column_selector": "number"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "variancethreshold",
+            "params": {
+                "threshold": 0.0
+            }
+        },
+        {
+            "name": "kneighborsclassifier",
+            "params": {
+                "algorithm": "auto",
+                "leaf_size": 30,
+                "metric": "minkowski",
+                "metric_params": null,
+                "n_jobs": null,
+                "n_neighbors": 1,
+                "p": 2,
+                "weights": "uniform"
+            }
+        }
+    ]
+}
