@@ -1,0 +1,121 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "robustscaler",
+                                "params": {
+                                    "copy": true,
+                                    "quantile_range": [
+                                        25.0,
+                                        75.0
+                                    ],
+                                    "with_centering": true,
+                                    "with_scaling": true
+                                }
+                            },
+                            {
+                                "name": "featureunion",
+                                "transformers": [
+                                    {
+                                        "name": "polynomialfeatures",
+                                        "params": {
+                                            "degree": 2,
+                                            "include_bias": true,
+                                            "interaction_only": false,
+                                            "order": "C"
+                                        }
+                                    },
+                                    {
+                                        "name": "rbfsampler",
+                                        "params": {
+                                            "gamma": 1.0,
+                                            "n_components": 100,
+                                            "random_state": null
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "xgbregressor",
+            "params": {
+                "base_score": 0.5,
+                "booster": "gbtree",
+                "colsample_bylevel": 1,
+                "colsample_bynode": 1,
+                "colsample_bytree": 1,
+                "gamma": 0,
+                "importance_type": "gain",
+                "learning_rate": 0.1,
+                "max_delta_step": 0,
+                "max_depth": 3,
+                "min_child_weight": 1,
+                "missing": null,
+                "n_estimators": 100,
+                "n_jobs": 1,
+                "nthread": null,
+                "objective": "reg:linear",
+                "random_state": 0,
+                "reg_alpha": 0,
+                "reg_lambda": 1,
+                "scale_pos_weight": 1,
+                "seed": null,
+                "silent": null,
+                "subsample": 1.0,
+                "verbosity": 1
+            }
+        }
+    ]
+}

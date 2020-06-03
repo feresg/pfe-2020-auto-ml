@@ -3,7 +3,7 @@ import numpy as np
 
 from .base_metafeatures import BaseMetafeaturesComputer
 from .constants import Task
-from .utils import get_numeric_features, get_categorical_features, get_stats, get_stats_names
+from .utils import get_numeric_features, get_categorical_features, get_stats, get_stats_names, timeit
 
 
 class DescriptiveMetafeatures(BaseMetafeaturesComputer):
@@ -11,6 +11,7 @@ class DescriptiveMetafeatures(BaseMetafeaturesComputer):
         super().__init__(self)
 
     @staticmethod
+    @timeit
     def compute(X, y, task):
         numeric_features = get_numeric_features(X)
         categorical_features = get_categorical_features(X)
@@ -48,19 +49,18 @@ class DescriptiveMetafeatures(BaseMetafeaturesComputer):
 
         elif task == Task.REGRESSION:
             metafeatures.update(get_regression_target_stats(y))
+
         return metafeatures
 
 
-def get_regression_target_stats(y):
-    stats = ['mean', 'stdev', 'min', 'q1', 'median', 'q3', 'max']
+def get_regression_target_stats(y, stats=['mean', 'stdev', 'min', 'q1', 'median', 'q3', 'max']):
     regression_stats_names = [stat + '__target' for stat in stats]
-    return zip(regression_stats_names, get_stats(y))
+    return zip(regression_stats_names, get_stats(y, stats))
 
 
-def get_target_class_probabilities_stats(y):
-    stats = ['mean', 'stdev', 'minority', 'median', 'majority']
+def get_target_class_probabilities_stats(y, stats=['mean', 'stdev', 'min', 'median', 'max']):
     target_class_probabilities_names = [
         stat + '_target_class_ratio' for stat in stats]
 
     target_class_probabilities = y.value_counts().values / y.shape[0]
-    return zip(target_class_probabilities_names, get_stats(target_class_probabilities, no_quartiles=True))
+    return zip(target_class_probabilities_names, get_stats(target_class_probabilities, stats))

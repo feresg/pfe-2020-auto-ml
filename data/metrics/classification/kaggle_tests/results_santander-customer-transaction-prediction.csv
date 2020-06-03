@@ -1,0 +1,209 @@
+,acc,balanced_acc,error
+1,0.9118350000000001,0.5837774096248598,
+1008,0.9001100000000001,0.5111207524284307,
+1026,,,Function get_classification_scores timed out after 300.0 seconds
+1036,0.90315,0.5206037187189363,
+1037,,,Function get_classification_scores timed out after 300.0 seconds
+1038,0.9021299999999999,0.6085997827731764,
+1040,0.8995,0.5301598887742263,
+1041,0.91095,0.6134593101284239,
+1043,0.908015,0.5585535606774527,
+1044,0.8376,0.557429419993287,
+1046,,,Function get_classification_scores timed out after 300.0 seconds
+1049,,,Function get_classification_scores timed out after 300.0 seconds
+1050,0.86261,0.6327340836124548,
+1053,0.8871650000000001,0.5473290360645686,
+1054,,,Function get_classification_scores timed out after 300.0 seconds
+1063,0.89951,0.5,
+1065,,,Function get_classification_scores timed out after 300.0 seconds
+1067,0.89961,0.6030529330549309,
+1068,0.9181,0.6226893000482713,
+1071,,,No feature in X meets the variance threshold 2.41249
+11,,,Function get_classification_scores timed out after 300.0 seconds
+1100,,,Function get_classification_scores timed out after 300.0 seconds
+1115,,,Function get_classification_scores timed out after 300.0 seconds
+1121,,,Function get_classification_scores timed out after 300.0 seconds
+12,0.9142100000000001,0.6207602073380609,
+1217,,,Function get_classification_scores timed out after 300.0 seconds
+1219,,,Function get_classification_scores timed out after 300.0 seconds
+1220,,,Function get_classification_scores timed out after 300.0 seconds
+13,0.89951,0.5,
+14,,,Function get_classification_scores timed out after 300.0 seconds
+1442,0.913765,0.6266730737375982,
+1443,,,No feature in X meets the variance threshold 4.11403
+1446,0.91374,0.6177317946790892,
+1447,0.908955,0.5571856698919694,
+1449,0.89971,0.5011421651661467,
+1451,0.915885,0.6425601652119326,
+1459,0.8923249999999999,0.6723568535999903,
+1460,,,Function get_classification_scores timed out after 300.0 seconds
+1462,0.903105,0.5419220615788715,
+1464,,,Function get_classification_scores timed out after 300.0 seconds
+1466,,,Function get_classification_scores timed out after 300.0 seconds
+1467,0.8632,0.6196450104437592,
+1468,0.913595,0.6241496029733701,
+1470,0.89951,0.5,
+1471,,,Function get_classification_scores timed out after 300.0 seconds
+1475,,,Function get_classification_scores timed out after 300.0 seconds
+1476,,,Function get_classification_scores timed out after 300.0 seconds
+1479,0.90702,0.6379648351767303,
+1480,,,Function get_classification_scores timed out after 300.0 seconds
+1481,,,Function get_classification_scores timed out after 300.0 seconds
+1485,,,Function get_classification_scores timed out after 300.0 seconds
+1487,,,Function get_classification_scores timed out after 300.0 seconds
+1488,,,Function get_classification_scores timed out after 300.0 seconds
+1489,0.910065,0.6017351686910304,
+1490,,,Function get_classification_scores timed out after 300.0 seconds
+1491,,,Function get_classification_scores timed out after 300.0 seconds
+1493,,,Function get_classification_scores timed out after 300.0 seconds
+1494,,,Function get_classification_scores timed out after 300.0 seconds
+1496,0.9214,0.6741954401434822,
+1497,,,Function get_classification_scores timed out after 300.0 seconds
+1498,0.902065,0.5265302128758753,
+1499,,,Function get_classification_scores timed out after 300.0 seconds
+15,,,Function get_classification_scores timed out after 300.0 seconds
+1500,0.918135,0.6304639607934268,
+1501,0.920775,0.6781696442089302,
+1504,,,Function get_classification_scores timed out after 300.0 seconds
+1506,,,Function get_classification_scores timed out after 300.0 seconds
+1507,,,Function get_classification_scores timed out after 300.0 seconds
+1508,0.90706,0.5554937262215387,
+1510,0.914115,0.6202108025019671,
+1511,0.5978100000000001,0.4622785735818538,
+1515,0.90898,0.6117446488792625,
+1520,0.8993950000000001,0.7572155547487779,
+1523,0.91352,0.6633359877763849,
+1524,,,Function get_classification_scores timed out after 300.0 seconds
+1525,,,Function get_classification_scores timed out after 300.0 seconds
+1526,,,Function get_classification_scores timed out after 300.0 seconds
+1527,,,Function get_classification_scores timed out after 300.0 seconds
+1528,,,Function get_classification_scores timed out after 300.0 seconds
+1529,,,Function get_classification_scores timed out after 300.0 seconds
+1530,0.9132,0.6087485203066303,
+1531,,,No feature in X meets the variance threshold 0.76945
+1534,0.8890800000000001,0.5344642895791978,
+1538,0.921325,0.6735051496126614,
+1547,,,Function get_classification_scores timed out after 300.0 seconds
+1548,,,Function get_classification_scores timed out after 300.0 seconds
+1549,0.91781,0.632549096339184,
+155,,,Function get_classification_scores timed out after 300.0 seconds
+1551,0.902785,0.5177873003468052,
+1552,,,Function get_classification_scores timed out after 300.0 seconds
+1553,,,Function get_classification_scores timed out after 300.0 seconds
+1554,,,Function get_classification_scores timed out after 300.0 seconds
+1555,0.88135,0.6232300388998013,
+1557,,,Function get_classification_scores timed out after 300.0 seconds
+1558,,,Function get_classification_scores timed out after 300.0 seconds
+1560,,,Function get_classification_scores timed out after 300.0 seconds
+1567,0.89951,0.5,
+1569,0.90799,0.5878263989862647,
+1570,,,Function get_classification_scores timed out after 300.0 seconds
+16,0.915205,0.6468525341628817,
+179,,,Function get_classification_scores timed out after 300.0 seconds
+180,,,Function get_classification_scores timed out after 300.0 seconds
+185,0.9021549999999999,0.5259860893323715,
+186,0.89951,0.5,
+188,0.90844,0.6497558425840639,
+21,0.910025,0.6335229549649966,
+22,0.9132600000000001,0.5933019879805911,
+25,0.914665,0.6172976901619692,
+26,,,Function get_classification_scores timed out after 300.0 seconds
+28,,,Function get_classification_scores timed out after 300.0 seconds
+285,,,Function get_classification_scores timed out after 300.0 seconds
+29,,,Function get_classification_scores timed out after 300.0 seconds
+3,0.907595,0.5470069849197565,
+30,,,Function get_classification_scores timed out after 300.0 seconds
+300,0.91424,0.6284885760782923,
+307,,,Function get_classification_scores timed out after 300.0 seconds
+31,0.9143600000000001,0.6230112419485908,
+312,0.91961,0.6644189528603985,
+313,,,Function get_classification_scores timed out after 300.0 seconds
+32,,,Function get_classification_scores timed out after 300.0 seconds
+329,,,Function get_classification_scores timed out after 300.0 seconds
+333,,,Function get_classification_scores timed out after 300.0 seconds
+335,,,Function get_classification_scores timed out after 300.0 seconds
+337,0.891475,0.5151758274082021,
+35,0.914225,0.6284812939705519,
+36,0.9220299999999999,0.6759506818629333,
+37,,,Function get_classification_scores timed out after 300.0 seconds
+375,,,Function get_classification_scores timed out after 300.0 seconds
+377,0.79897,0.6398412657999585,
+38,0.9139799999999999,0.6236110845296374,
+39,0.9086049999999999,0.5886344086858436,
+40,,,Function get_classification_scores timed out after 300.0 seconds
+40474,,,Function get_classification_scores timed out after 300.0 seconds
+40475,0.9008299999999999,0.5158915782874732,
+40478,0.89965,0.5007181391935539,
+40496,0.9139200000000001,0.6255283222404696,
+40497,,,Function get_classification_scores timed out after 300.0 seconds
+40499,,,Function get_classification_scores timed out after 300.0 seconds
+40509,,,Function get_classification_scores timed out after 300.0 seconds
+40646,0.913745,0.6215296037050801,
+40647,0.90193,0.5174162525264199,
+40648,0.89951,0.5,
+40649,,,Function get_classification_scores timed out after 300.0 seconds
+40650,,,Function get_classification_scores timed out after 300.0 seconds
+40663,0.90726,0.5671254703160947,
+40669,0.89951,0.5,
+40677,,,Function get_classification_scores timed out after 300.0 seconds
+40680,0.911735,0.6308867285039832,
+40682,,,Function get_classification_scores timed out after 300.0 seconds
+40686,,,Function get_classification_scores timed out after 300.0 seconds
+40693,,,Function get_classification_scores timed out after 300.0 seconds
+40704,,,Function get_classification_scores timed out after 300.0 seconds
+40705,,,No feature in X meets the variance threshold 4.02484
+40708,,,Function get_classification_scores timed out after 300.0 seconds
+40712,0.91196,0.5840330428029942,
+40715,,,Function get_classification_scores timed out after 300.0 seconds
+41,,,Function get_classification_scores timed out after 300.0 seconds
+4134,0.9132049999999999,0.6203196482967068,
+4153,,,Function get_classification_scores timed out after 300.0 seconds
+42,,,Function get_classification_scores timed out after 300.0 seconds
+43,,,Function get_classification_scores timed out after 300.0 seconds
+4340,,,Function get_classification_scores timed out after 300.0 seconds
+44,0.912215,0.5747981659785879,
+446,0.7989100000000001,0.5647622167578156,
+450,,,Function get_classification_scores timed out after 300.0 seconds
+451,,,Function get_classification_scores timed out after 300.0 seconds
+452,,,Function get_classification_scores timed out after 300.0 seconds
+454,,,Function get_classification_scores timed out after 300.0 seconds
+455,0.9144,0.6300864837380887,
+4550,,,Function get_classification_scores timed out after 300.0 seconds
+458,,,Function get_classification_scores timed out after 300.0 seconds
+463,,,Function get_classification_scores timed out after 300.0 seconds
+464,,,Function get_classification_scores timed out after 300.0 seconds
+469,,,Function get_classification_scores timed out after 300.0 seconds
+475,,,Function get_classification_scores timed out after 300.0 seconds
+478,0.92122,0.6734114853881383,
+481,,,Function get_classification_scores timed out after 300.0 seconds
+488,,,Function get_classification_scores timed out after 300.0 seconds
+49,0.90238,0.529527700301997,
+50,0.919325,0.6711703023735189,
+54,,,Function get_classification_scores timed out after 300.0 seconds
+55,0.900705,0.5118627218476052,
+56,0.921335,0.6740878240442136,
+57,0.90707,0.5943898861872152,
+59,0.9021,0.5140022148460834,
+60,,,Function get_classification_scores timed out after 300.0 seconds
+6332,0.9022,0.5145731072723235,
+679,,,Function get_classification_scores timed out after 300.0 seconds
+694,,,Function get_classification_scores timed out after 300.0 seconds
+721,,,Function get_classification_scores timed out after 300.0 seconds
+733,0.89951,0.5,
+747,0.9002399999999999,0.5063219217599468,
+788,0.8607750000000001,0.6246891860860855,
+801,,,Function get_classification_scores timed out after 300.0 seconds
+811,,,Function get_classification_scores timed out after 300.0 seconds
+840,0.91382,0.6252752457177003,
+844,,,Function get_classification_scores timed out after 300.0 seconds
+851,0.8240799999999999,0.4606144702450869,
+852,,,Function get_classification_scores timed out after 300.0 seconds
+853,0.914615,0.6318539053217667,
+854,,,Function get_classification_scores timed out after 300.0 seconds
+941,0.908515,0.5818342061758173,
+947,,,Function get_classification_scores timed out after 300.0 seconds
+953,0.89951,0.5,
+962,,,Function get_classification_scores timed out after 300.0 seconds
+968,,,Function get_classification_scores timed out after 300.0 seconds
+999,0.7480100000000001,0.7512910353276976,
+4154,0.896625,0.5053588896201816,

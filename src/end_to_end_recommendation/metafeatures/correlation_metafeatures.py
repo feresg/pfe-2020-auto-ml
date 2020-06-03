@@ -19,7 +19,8 @@ class CorrelationMetafeatures(BaseMetafeaturesComputer):
         return metafeatures
 
 
-def get_features_correlations(X, y):
+def get_features_correlations(X, y, stats=['mean', 'stdev', 'min', 'max']):
+    stats_names = get_stats_names(stats, 'correlation', 'features_target')
     # numeric_features.iteritems() returns a tuple with column name and pandas series, hence the [1]
     corrs = X.corrwith(y)
-    return zip(get_stats_names('correlation', 'features_target'), get_stats(corrs))
+    return zip(stats_names, get_stats(corrs, stats))

@@ -6,13 +6,14 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import SGDRegressor
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
+from sklearn.ensemble import ExtraTreesClassifier
 from .constants import Task
 from .utils import get_X_y_preprocessed
 from .base_metafeatures import BaseMetafeaturesComputer
 
 import logging
-logging.basicConfig(filename='landmarking.log', filemode='a',
-                    format='%(asctime)s - %(message)s', level=logging.INFO)
+# logging.basicConfig(filename='landmarking.log', filemode='a',
+#                     format='%(asctime)s - %(message)s', level=logging.INFO)
 
 
 '''
@@ -44,21 +45,21 @@ class LandmarkingMetafeatures(BaseMetafeaturesComputer):
 
 
 classifiers = dict(
-    knn_5=KNeighborsClassifier(n_neighbors=5),
+    # knn_5=KNeighborsClassifier(n_neighbors=5),
     gaussian_nb=GaussianNB(),
     lda=LinearDiscriminantAnalysis(),
-    decision_tree_3=DecisionTreeClassifier(
-        max_depth=3, criterion='entropy', random_state=seed),
     decision_tree_1=DecisionTreeClassifier(
         max_depth=1, criterion='entropy', random_state=seed),
-    random_tree_2=DecisionTreeClassifier(
-        max_depth=2, criterion='entropy', splitter='random', random_state=seed)
+    decision_tree_2=DecisionTreeClassifier(
+        max_depth=2, criterion='entropy', random_state=seed),
+    extra_trees_2_10=ExtraTreesClassifier(
+        max_depth=2, n_estimators=10, random_state=seed)
 )
 
 regressors = dict(
-    knn_5=KNeighborsRegressor(n_neighbors=5),
-    decision_tree_3=DecisionTreeRegressor(max_depth=3, random_state=seed),
+    # knn_5=KNeighborsRegressor(n_neighbors=5),
     decision_tree_1=DecisionTreeRegressor(max_depth=1, random_state=seed),
+    decision_tree_2=DecisionTreeRegressor(max_depth=2, random_state=seed),
     random_tree_2=DecisionTreeRegressor(
         max_depth=2, splitter='random', random_state=seed)
 )
@@ -79,7 +80,7 @@ def get_classification_scores(X, y, n_folds=5):
 
         avg_time = np.nanmean(scores['fit_time']) + \
             np.nanmean(scores['score_time'])
-        logging.info('{}: {} ms'.format(classifier_name, avg_time))
+        logging.info('{}: {} s'.format(classifier_name, avg_time))
     return landmarking_scores
 
 
@@ -99,5 +100,5 @@ def get_regression_scores(X, y, n_folds=4):
 
         avg_time = np.nanmean(scores['fit_time']) + \
             np.nanmean(scores['score_time'])
-        logging.info('{}: {} ms'.format(regressor_name, avg_time))
+        logging.info('{}: {} s'.format(regressor_name, avg_time))
     return landmarking_scores

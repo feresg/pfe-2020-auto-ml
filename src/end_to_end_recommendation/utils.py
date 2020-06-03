@@ -1,11 +1,29 @@
 from metafeatures.metafeatures import Metafeatures
-import joblib
+# from h2o import H2OFrame, import_mojo
+import h2o
 import json
 import os
 import pandas as pd
 
 
-DATA_PATH = './data/'
+h2o.init()
+
+DATA_PATH = '../../data/'
+
+
+def load_all_models():
+    acc_model = h2o.import_mojo(
+        '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'accuracy'))
+    balaned_acc_model = h2o.import_mojo(
+        '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'balanced_accuracy'))
+
+    return {
+        'accuracy': acc_model,
+        'balanced_accuracy': balaned_acc_model
+    }
+
+
+MODELS = load_all_models()
 
 
 def get_dataset_metafeatures(recommendation_request):
@@ -22,8 +40,9 @@ def build_metafeatures_df(metafeatures, task):
     metafeatures = {'test__'+k: v for k, v in metafeatures.items()}
 
     pipelines_path = '{}kpis/{}/'.format(DATA_PATH, task)
-
-    for ref_pipeline_filename in os.listdir(pipelines_path):
+    all_pipelines = filter(lambda f: not f.startswith(
+        '.'), os.listdir(pipelines_path))
+    for ref_pipeline_filename in all_pipelines:
         pipeline_id = ref_pipeline_filename.split('.')[0]
         ref_pipeline_path = '{}/{}'.format(pipelines_path,
                                            ref_pipeline_filename)
@@ -33,18 +52,26 @@ def build_metafeatures_df(metafeatures, task):
 
         metafeatures_df = metafeatures_df.append(
             pd.Series(metafeatures, name=pipeline_id))
+    # print(metafeatures_df)
     return metafeatures_df
 
 
-def get_top_pipeline(metafeatures_df, task, metric='balanced_accuracy'):
-    metric = 'balanced_accuracy' if task == 'classification' else 'neg_mean_absolute_error'
+def get_top_pipeline(metafeatures_df, task, metric='balanced_accuracy', n=5):
+    # metric = 'balanced_accuracy' if task == 'classification' else 'neg_mean_absolute_error'
+    model = MODELS[metric]
 
-    model_path = '{}models/{}_model.joblib'.format(DATA_PATH, metric)
-    model = joblib.load(model_path)
+    test_df = h2o.H2OFrame(metafeatures_df)
+    test_df = test_df.asnumeric()
 
-    metafeatures_df['predicted_performance'] = model.predict(metafeatures_df)
+    predictions = model.predict(test_df)
+    predictions = predictions.as_data_frame(use_pandas=True)
+    predictions.index = metafeatures_df.index
+
+    top_n_pipelines = predictions['predict'].nlargest(
+        n=10).index.values.tolist()
+
     # TODO: for regression (MAE, MSE) will need to get idxmin
-    top_pipeline_id = metafeatures_df['predicted_performance'].idxmax()
+    top_pipeline_id = predictions['predict'].idxmax()
     top_pipeline_path = '{}pipelines/{}/{}.json'.format(
         DATA_PATH, task, top_pipeline_id)
-    return json.load(open(top_pipeline_path, 'r'))
+    return top_pipeline_id, json.load(open(top_pipeline_path, 'r')), top_n_pipelines

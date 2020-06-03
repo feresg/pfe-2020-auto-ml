@@ -1,0 +1,109 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "featureunion",
+                        "transformers": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "pipeline",
+                                "steps": [
+                                    {
+                                        "name": "simpleimputer",
+                                        "params": {
+                                            "add_indicator": false,
+                                            "copy": true,
+                                            "fill_value": null,
+                                            "missing_values": null,
+                                            "strategy": "mean",
+                                            "verbose": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "minmaxscaler",
+                                        "params": {
+                                            "copy": true,
+                                            "feature_range": [
+                                                0,
+                                                1
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "rbfsampler",
+                                        "params": {
+                                            "gamma": 0.00010784713678640307,
+                                            "n_components": 7940,
+                                            "random_state": null
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "ardregression",
+            "params": {
+                "alpha_1": 0.0006060550134805099,
+                "alpha_2": 3.187233496075356e-05,
+                "compute_score": false,
+                "copy_X": true,
+                "fit_intercept": true,
+                "lambda_1": 5.353885855546084e-10,
+                "lambda_2": 3.587537225288589e-05,
+                "n_iter": 300,
+                "normalize": false,
+                "threshold_lambda": 99981.63583476045,
+                "tol": 0.0005789028777771533,
+                "verbose": false
+            }
+        }
+    ]
+}

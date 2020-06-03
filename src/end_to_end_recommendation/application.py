@@ -1,16 +1,18 @@
 from utils import get_dataset_metafeatures, build_metafeatures_df, get_top_pipeline
 from enum import Enum
 from flask import Flask, request, jsonify
+# import h2o
 
 app = Flask(__name__)
 
 
 class RecommendationRequest:
 
-    def __init__(self, dataset_url, target_feature, task):
+    def __init__(self, dataset_url, target_feature, task, metric):
         self.dataset_url = dataset_url
         self.target_feature = target_feature
         self.task = task
+        self.metric = metric
 
 # TODO: return http error status if task is not in [classification, regression], or invalid dataset url or if target_feature not in dataset
 @app.route('/recommend', methods=['GET'])
@@ -19,7 +21,8 @@ def recommend_pipeline():
     recommendation_request = RecommendationRequest(
         dataset_url=request.json['dataset_url'],
         target_feature=request.json['target_feature'],
-        task=request.json['task']
+        task=request.json['task'],
+        metric=request.json['metric']
     )
     # step 1: get dataset metafeatures
     metafeatures = get_dataset_metafeatures(recommendation_request)
@@ -29,14 +32,18 @@ def recommend_pipeline():
         metafeatures, recommendation_request.task)
 
     # step 3: run model on metafeatures_df, get top pipeline
-    top_pipeline_serialized = get_top_pipeline(
-        metafeatures_df, recommendation_request.task)
+    top_pipeline_id, top_pipeline_serialized, top_n_pipelines = get_top_pipeline(
+        metafeatures_df, recommendation_request.task, metric=recommendation_request.metric)
 
     return jsonify(
-        pipeline=top_pipeline_serialized
+        pipeline_id=top_pipeline_id,
+        pipeline=top_pipeline_serialized,
+        top_n_pipelines=top_n_pipelines
     )
 
 
 if __name__ == '__main__':
+    # h2o.init()
+    # MODELS = load_all_models()
     app.debug = True
-    app.run(port=5001)
+    app.run(port=5000)

@@ -1,0 +1,92 @@
+{
+    "name": "",
+    "steps": [
+        {
+            "name": "columntransformer",
+            "transformers": [
+                {
+                    "transformer": {
+                        "name": "pipeline-1",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "mean",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "standardscaler",
+                                "params": {
+                                    "copy": true,
+                                    "with_mean": true,
+                                    "with_std": true
+                                }
+                            },
+                            {
+                                "name": "polynomialfeatures",
+                                "params": {
+                                    "degree": 3,
+                                    "include_bias": true,
+                                    "interaction_only": true,
+                                    "order": "C"
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "number"
+                },
+                {
+                    "transformer": {
+                        "name": "pipeline-2",
+                        "steps": [
+                            {
+                                "name": "simpleimputer",
+                                "params": {
+                                    "add_indicator": false,
+                                    "copy": true,
+                                    "fill_value": null,
+                                    "missing_values": null,
+                                    "strategy": "most_frequent",
+                                    "verbose": 0
+                                }
+                            },
+                            {
+                                "name": "onehotencoder",
+                                "params": {
+                                    "categories": "auto",
+                                    "drop": null,
+                                    "handle_unknown": "ignore",
+                                    "sparse": false
+                                }
+                            }
+                        ]
+                    },
+                    "column_selector": "category"
+                }
+            ],
+            "remainder": "drop"
+        },
+        {
+            "name": "ardregression",
+            "params": {
+                "alpha_1": 0.00013151803657290403,
+                "alpha_2": 1.832267927920423e-06,
+                "compute_score": false,
+                "copy_X": true,
+                "fit_intercept": true,
+                "lambda_1": 1.7962728232466925e-06,
+                "lambda_2": 4.65020855541631e-05,
+                "n_iter": 300,
+                "normalize": false,
+                "threshold_lambda": 2203.642772761025,
+                "tol": 4.090070336935305e-05,
+                "verbose": false
+            }
+        }
+    ]
+}
