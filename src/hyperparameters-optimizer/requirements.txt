@@ -1,0 +1,6 @@
+pandas==0.25.3
+joblib==0.14.1
+numpy==1.18.0
+hyperopt==0.2.4
+ray==0.8.5
+scikit_learn==0.22.1
