@@ -6,7 +6,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import SGDRegressor
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
-from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import ExtraTreesClassifier, ExtraTreesRegressor
 from .constants import Task
 from .utils import get_X_y_preprocessed
 from .base_metafeatures import BaseMetafeaturesComputer
@@ -62,6 +62,8 @@ regressors = dict(
     decision_tree_2=DecisionTreeRegressor(max_depth=2, random_state=seed),
     random_tree_2=DecisionTreeRegressor(
         max_depth=2, splitter='random', random_state=seed)
+    # extra_trees_2_10=ExtraTreesRegressor(
+    #     max_depth=2, n_estimators=10, random_state=seed)
 )
 
 

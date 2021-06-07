@@ -16,10 +16,15 @@ def load_all_models():
         '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'accuracy'))
     balaned_acc_model = h2o.import_mojo(
         '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'balanced_accuracy'))
-
+    mean_abs_err_model = h2o.import_mojo(
+        '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'mean_absolute_error'))
+    r2_model = h2o.import_mojo(
+        '{}models/{}_h2o_model.zip'.format(DATA_PATH, 'r2'))
     return {
         'accuracy': acc_model,
-        'balanced_accuracy': balaned_acc_model
+        'balanced_accuracy': balaned_acc_model,
+        'mean_absolute_error': mean_abs_err_model,
+        'r2': r2_model
     }
 
 
@@ -56,7 +61,8 @@ def build_metafeatures_df(metafeatures, task):
     return metafeatures_df
 
 
-def get_top_pipeline(metafeatures_df, task, metric='balanced_accuracy', n=5):
+def get_top_pipeline(metafeatures_df, task, metric='balanced_accuracy'):
+    metrics_to_minimize = ['mean_absolute_error']
     # metric = 'balanced_accuracy' if task == 'classification' else 'neg_mean_absolute_error'
     model = MODELS[metric]
 
@@ -67,11 +73,15 @@ def get_top_pipeline(metafeatures_df, task, metric='balanced_accuracy', n=5):
     predictions = predictions.as_data_frame(use_pandas=True)
     predictions.index = metafeatures_df.index
 
-    top_n_pipelines = predictions['predict'].nlargest(
-        n=10).index.values.tolist()
+    # top_n_pipelines = predictions['predict'].nlargest(
+    #     n=n).index.values.tolist()
 
     # TODO: for regression (MAE, MSE) will need to get idxmin
-    top_pipeline_id = predictions['predict'].idxmax()
+    if metric in metrics_to_minimize:
+        top_pipeline_id = predictions['predict'].idxmin()
+    else:
+        top_pipeline_id = predictions['predict'].idxmax()
+
     top_pipeline_path = '{}pipelines/{}/{}.json'.format(
         DATA_PATH, task, top_pipeline_id)
-    return top_pipeline_id, json.load(open(top_pipeline_path, 'r')), top_n_pipelines
+    return top_pipeline_id, json.load(open(top_pipeline_path, 'r'))

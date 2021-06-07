@@ -22,13 +22,16 @@ class InfoTheoreticalMetafeatures(BaseMetafeaturesComputer):
 
         metafeatures = {}
 
-        metafeatures.update(
-            get_entropies_categorical_features(categorical_features))
         if task == Task.CLASSIFICATION:
+            metafeatures.update(
+                get_entropies_categorical_features(categorical_features))
+
             # metafeatures.update(
             #     get_information_gain_categorical_features(categorical_features, y))
+
             metafeatures.update(
                 get_mutual_information_categorical_features(categorical_features, y))
+
         return metafeatures
 
 
